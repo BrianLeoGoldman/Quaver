@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #eee7e7;
 }
+
+.vynil-card {
+  border: 25px;
+  border-color: red;
+}
+
+.vynil-picture {
+  height: 100px;
+  width: 100px;
+}
+
+
