@@ -1,3 +1,4 @@
+import './VynilCardList.scss'
 import { useState } from "react"
 import { VynilCard } from "../VynilCard/VynilCard"
 
@@ -7,15 +8,15 @@ export const VynilCardList = () => {
 
     const fetchData = async () => {
         const vynils = [
-        /* {id: 1, name: 'Band 1', price: 3000, artist: 'Nirvana', state: [], discs: 1, description: 'A description', picture: "images/A.jpg"},
-        {id: 2, name: 'Band 2', price: 4000, artist: 'Nirvana', state: [], discs: 1, description: 'A description', picture: "images/B.jpg"},
-        {id: 3, name: 'Band 3', price: 2500, artist: 'Nirvana', state: [], discs: 1, description: 'A description', picture: "images/A.jpg"},
-        {id: 4, name: 'Band 4', price: 3600, artist: 'Nirvana', state: [], discs: 1, description: 'A description', picture: "images/B.jpg"},
-        {id: 5, name: 'Band 5', price: 4100, artist: 'Nirvana', state: [], discs: 1, description: 'A description', picture: "images/A.jpg"},
-        {id: 6, name: 'Band 6', price: 7090, artist: 'Nirvana', state: [], discs: 1, description: 'A description', picture: "images/B.jpg"} */
+    /*  {id: 1, name: 'Band 1', price: 3000, artist: 'Artist A', state: [], discs: 1, description: 'A description', picture: '../../src/assets/images/vynils/A.jpg'},
+        {id: 2, name: 'Band 2', price: 4000, artist: 'Artist B', state: [], discs: 2, description: 'A description', picture: '../../src/assets/images/vynils/B.jpg'},
+        {id: 3, name: 'Band 3', price: 2500, artist: 'Artist C', state: [], discs: 3, description: 'A description', picture: '../../src/assets/images/vynils/A.jpg'},
+        {id: 4, name: 'Band 4', price: 3600, artist: 'Artist D', state: [], discs: 4, description: 'A description', picture: '../../src/assets/images/vynils/B.jpg'},
+        {id: 5, name: 'Band 5', price: 4100, artist: 'Artist E', state: [], discs: 1, description: 'A description', picture: '../../src/assets/images/vynils/A.jpg'},
+        {id: 6, name: 'Band 6', price: 7090, artist: 'Artist F', state: [], discs: 2, description: 'A description', picture: '../../src/assets/images/vynils/B.jpg'} */
     ]
         try {
-            const importData = await fetch("data.json");
+            const importData = await fetch("../../src/assets/data.json");
             const data = await importData.json();
             data.forEach(item => {
                 vynils.push(
@@ -41,8 +42,8 @@ export const VynilCardList = () => {
     }
 
     return (
-        <div>
-            <button onClick={ fetchData }>Click me</button>
+        <div className='card-list'>
+            <button onClick={ fetchData }>See Vynils</button>
             <div>{results}</div>
         </div>
     )

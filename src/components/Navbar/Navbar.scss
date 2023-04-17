@@ -1,5 +1,38 @@
 .header {
-    background-color: rgb(138, 21, 44);
+    background: rgb(175,25,23);
+    background: linear-gradient(0deg, rgba(175,25,23,0.8239495627352503) 0%, rgba(253,153,45,0.7959383582534576) 100%);
+    box-shadow: 0 0 5px #1854af;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        height: 1.3em;
+        will-change: filter;
+        transition: filter 300ms;
+        border-radius: 10px;
+        margin-left: 20px;
+        &:hover {
+            animation-duration: 1.5s;
+            animation-name: logo-spin;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            filter: drop-shadow(0 0 0.5em #03e9f4);
+        }
+    }
+    .logo-name {
+        font-family: "Oldenburg";
+        color: rgb(233, 231, 242);
+        text-shadow: 0 0 15px #03e9f4;
+        font-size: 40px;
+        font-weight: 500;
+        text-transform: uppercase;
+        height: 1.5em;
+        padding-left: 20px;
+    }
     .header__container {
         max-width: 1100px;
         max-height: 100px;
@@ -8,32 +41,47 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .logo {
-            color: white;
-            font-size: 42px;
-            font-weight: 700;
-            text-transform: uppercase;
-            height: 1.5em;
-            will-change: filter;
-            transition: filter 300ms;
-            border-radius: 10px;
-            &:hover {
-                background-color: aqua;
-                filter: drop-shadow(0 0 1em #646cffaa);
-            }
-        }
         .navbar {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 16px;
             .navbar__link {
+                font-family: Cinzel;
                 font-weight: 700;
-                font-size: 20px;
-                color: white;
+                font-size: 30px;
+                color: black;
                 cursor: pointer;
                 text-transform: uppercase;
+                margin: 10px;
+                letter-spacing: 5px;
+                &:hover {
+                    color: #fff;
+                    text-shadow: 0 0 5px #03e9f4,
+                    0 0 25px #03e9f4,
+                    0 0 50px #03e9f4,
+                    0 0 100px #03e9f4;
+                }
             }
         }
+    }
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    
+    to {
+        -webkit-mask-position: -50%;
     }
 }

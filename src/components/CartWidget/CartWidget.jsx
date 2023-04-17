@@ -1,12 +1,12 @@
 import './CartWidget.scss'
-import logo from '../../assets/cart.png'
+import logo from '../../assets/images/icons/cart.png'
 
 const CartWidget = () => {
 
     return (
-        <div>
+        <div className="cart-widget">
             <img className="cart-logo" src={logo}/>
-            <span>0</span>
+            <span className="cart-counter">0</span>
         </div>
     )
 }

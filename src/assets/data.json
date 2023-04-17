@@ -7,7 +7,7 @@
         "description": "Live presentation of the english band Queen at Rock in Rio on January 18 of 1985",
         "state": ["New"],
         "discs": 1,
-        "picture": "images/1.jpg"
+        "picture": "../../src/assets/images/vynils/1.jpg"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "description": "Limited edition with blue translucid color",
         "state": ["New", "Limited Edition", "Sealed"],
         "discs": 2,
-        "picture": "images/2.jpg"
+        "picture": "../../src/assets/images/vynils/2.jpg"
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@
         "description": "Title says 40th Anniversary but actual edition is Double Picture Disc",
         "state": ["New", "Imported", "Sealed"],
         "discs": 2,
-        "picture": "images/3.jpg"
+        "picture": "../../src/assets/images/vynils/3.jpg"
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@
         "description": "Live presentation with 14 songs",
         "state": ["Used"],
         "discs": 1,
-        "picture": "images/4.jpg"
+        "picture": "../../src/assets/images/vynils/4.jpg"
     },
     {
         "id": 5,
@@ -47,6 +47,6 @@
         "description": "Live performance of AC/DC with Angus Young, Brian Johnson, Malcolm Young and Cliff Williams",
         "state": ["New", "Sealed"],
         "discs": 1,
-        "picture": "images/5.jpg"
+        "picture": "../../src/assets/images/vynils/5.jpg"
     }
 ]

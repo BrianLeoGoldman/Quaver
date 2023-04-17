@@ -1,15 +1,61 @@
-
 .vynil-card {
+    width: 500px;
+    height: fit-content;
     background-color: antiquewhite;
     border: 25px;
-    border-color: red;
     border-radius: 10px;
+    margin-bottom: 20px;
     .vynil-picture {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
+        padding: 20px;
+        border-radius: 25px;
+    }
+    .text-title {
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding: 10px;
+    }
+    .text-artist {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .text-description {
+        font-size: 1.2rem;
+    }
+    .text-price {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 10px;
     }
     .text {
         color: black;
+    }
+    .row-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .box {
+            background-color: cadetblue;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+    .column-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .add-button {
+        font-weight: 700;
+        color: black;
+        background-color: darkgoldenrod;
     }
 }
 

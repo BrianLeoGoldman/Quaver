@@ -1,4 +1,21 @@
-.cart-logo {
-    height:2.5em;
-    margin-right: 10px;
+.cart-widget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    padding: 5px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    .cart-logo {
+        height:2.5em;
+        margin-right: 10px;
+    }
+    .cart-counter {
+        height: 1.5em;
+        font-size: larger;
+        font-weight: 700;
+        color: black;
+    }
 }
