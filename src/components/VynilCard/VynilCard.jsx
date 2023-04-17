@@ -1,4 +1,6 @@
-export const Card = (name, artist, price, state, discs, description, picture) => {
+import './VynilCard.scss'
+
+export const VynilCard = (name, artist, price, state, discs, description, picture) => {
     return (
     <div className="vynil-card">
         <h5 className="text">TITLE: {name}</h5>

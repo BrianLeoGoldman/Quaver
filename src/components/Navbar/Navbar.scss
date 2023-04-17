@@ -1,0 +1,39 @@
+.header {
+    background-color: rgb(138, 21, 44);
+    .header__container {
+        max-width: 1100px;
+        max-height: 100px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            color: white;
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: uppercase;
+            height: 1.5em;
+            will-change: filter;
+            transition: filter 300ms;
+            border-radius: 10px;
+            &:hover {
+                background-color: aqua;
+                filter: drop-shadow(0 0 1em #646cffaa);
+            }
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            .navbar__link {
+                font-weight: 700;
+                font-size: 20px;
+                color: white;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
