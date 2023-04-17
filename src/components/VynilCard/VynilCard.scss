@@ -1,7 +1,7 @@
 .vynil-card {
     width: 500px;
     height: fit-content;
-    background-color: antiquewhite;
+    background-color: rgb(147, 126, 143);
     border: 25px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -11,39 +11,51 @@
         padding: 20px;
         border-radius: 25px;
     }
+    .text {
+        color: black;
+    }
     .text-title {
+        font-family: "Cinzel";
         font-size: 1.7rem;
         font-weight: 700;
-        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .text-artist {
+        font-family: "Arvo";
         font-size: 1.5rem;
-        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        background-color: rgba(216, 156, 67, 0.814);
+        border-radius: 10px;
+
     }
     .text-description {
         font-size: 1.2rem;
+        font-family: "Cinzel";
     }
     .text-price {
+        font-family: "Oldenburg";
         font-size: 2rem;
         font-weight: 700;
         margin: 10px;
     }
-    .text {
-        color: black;
+    .box {
+        background-color: cadetblue;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: white;
+        font-family: "Arvo";
     }
     .row-section {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        .box {
-            background-color: cadetblue;
-            padding: 10px;
-            margin: 5px;
-            border-radius: 10px;
-            text-transform: uppercase;
-            color: white;
-        }
     }
     .column-section {
         display: flex;
@@ -53,9 +65,10 @@
         padding: 10px;
     }
     .add-button {
+        font-family: "Arvo";
         font-weight: 700;
         color: black;
-        background-color: darkgoldenrod;
+        background-color: rgba(184, 135, 11, 0.863);
     }
 }
 

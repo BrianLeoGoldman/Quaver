@@ -3,7 +3,7 @@ import './VynilCard.scss'
 export const VynilCard = (name, artist, price, state, discs, description, picture) => {
     let states = []
     state.forEach(element => {
-        states.push(<p className="text other-text box">{element}</p>)
+        states.push(<p className="text box">{element}</p>)
     })
     return (
     <div className="vynil-card">
@@ -12,7 +12,7 @@ export const VynilCard = (name, artist, price, state, discs, description, pictur
             <p className="text text-artist">{artist}</p>
         </div>
         <div className="row-section">
-        {states}
+            {states}
         </div>
         <p className="text text-price">${price}</p>
         <div className="row-section">

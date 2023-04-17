@@ -1,6 +1,19 @@
 #root {
   width: 100%;
   margin: 0 auto;
-  /* padding: 2rem; */
   text-align: center;
+}
+
+.App {
+  background-color: blanchedalmond;
+}
+
+.page-title {
+  color: black;
+  font-family: 'Oldenburg';
+}
+
+.page-subtitle {
+  color: black;
+  font-family: 'Oldenburg';
 }

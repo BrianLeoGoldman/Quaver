@@ -41,9 +41,11 @@ export const VynilCardList = () => {
         }
     }
 
+    fetchData()
+
     return (
         <div className='card-list'>
-            <button onClick={ fetchData }>See Vynils</button>
+            {/* <button onClick={ fetchData }>See Vynils</button> */}
             <div>{results}</div>
         </div>
     )

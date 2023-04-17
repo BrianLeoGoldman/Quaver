@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Quaver</h1>
-      <p>Looking for music? You are in the right place...</p>
+      <h1 className='page-title'>Quaver</h1>
+      <h2 className='page-subtitle'>Looking for music? You are in the right place...</h2>
       <VynilCardList />
     </div>
   )

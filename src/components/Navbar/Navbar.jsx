@@ -11,6 +11,7 @@ export const Navbar = () => {
                 <nav className="navbar">
                     <a href='#' className="navbar__link">HOME</a>
                     <a href='#' className="navbar__link">CATALOG</a>
+                    <a href='#' className="navbar__link">OFFERS</a>
                     <a href='#' className="navbar__link">CART</a>
                     <a href='#' className="navbar__link">USER</a>
                 </nav>
