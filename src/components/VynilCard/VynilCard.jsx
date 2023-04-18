@@ -19,7 +19,7 @@ export const VynilCard = (name, artist, price, state, discs, description, pictur
             <div className="column-section">
                 <p className="text text-description">{description}</p>
                 <p className="text text-description">{discs} DISC/S</p>
-                <button className='add-button'>ADD</button>
+                <button className='add-button'>ADD TO CART</button>
             </div>
             <img className="vynil-picture" src={picture} alt="Picture" />
         </div>
