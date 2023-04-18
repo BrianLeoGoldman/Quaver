@@ -1,33 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.scss'
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
+import { VynilCardList } from './components/VynilCardList/VynilCardList'
+import { Navbar } from './components/Navbar/Navbar'
+import { Footer } from './components/Footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Quaver</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          You have clicked {count} times
-        </button>
-        <p>
-          Looking for music? You are in the right place...
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Chill dude, chill...
-      </p>
+      <Navbar/>
+      <ItemListContainer title={"Welcome!"} subtitle={"Music, vynils & more!"} introduction={"Search from a wide selection of vynils of all music genres, styles and decades!"}/>
+      <VynilCardList/>
+      <Footer/>
     </div>
   )
 }

@@ -1,0 +1,35 @@
+@mixin flex ($display, $direction, $justify, $align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+footer {
+    @include flex(flex, column, center, center);
+    background-image: url("../../assets/images/background-4.jpg");
+    background-size: 100%;
+    box-shadow: 0 0 5px #1854af;
+    text-align: center;
+    width: 100%;     
+    padding-bottom: 2px;
+    .text {
+        width: 50%;
+        @include flex(flex, row, space-around, center);
+        .footer-text {
+            color: white;
+            font-family: "Cinzel";
+            font-size: 1.5rem;
+            padding-top: 5px; 
+        }
+    }
+    .logos {
+        width: 50%;
+        @include flex(flex, row, space-around, center);
+        img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+    }
+}

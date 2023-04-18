@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Rock You From Rio - Live 1985",
+        "price": 7190,
+        "artist": "Queen",
+        "description": "Live presentation of the english band Queen at Rock in Rio on January 18 of 1985",
+        "state": ["New"],
+        "discs": 1,
+        "picture": "../../src/assets/images/vynils/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Best Of Electronic",
+        "price": 24990,
+        "artist": "Giorgio Moroder",
+        "description": "Limited edition with blue translucid color",
+        "state": ["New", "Limited Edition", "Sealed"],
+        "discs": 2,
+        "picture": "../../src/assets/images/vynils/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Abba Gold",
+        "price": 17490,
+        "artist": "Abba",
+        "description": "Title says 40th Anniversary but actual edition is Double Picture Disc",
+        "state": ["New", "Imported", "Sealed"],
+        "discs": 2,
+        "picture": "../../src/assets/images/vynils/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Teatro Castelo Roma 1991",
+        "price": 5490,
+        "artist": "Nirvana",
+        "description": "Live presentation with 14 songs",
+        "state": ["Used"],
+        "discs": 1,
+        "picture": "../../src/assets/images/vynils/4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Live At Circus Krone 2003",
+        "price": 5790,
+        "artist": "AC/DC",
+        "description": "Live performance of AC/DC with Angus Young, Brian Johnson, Malcolm Young and Cliff Williams",
+        "state": ["New", "Sealed"],
+        "discs": 1,
+        "picture": "../../src/assets/images/vynils/5.jpg"
+    }
+]
