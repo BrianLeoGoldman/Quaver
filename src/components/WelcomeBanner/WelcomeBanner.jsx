@@ -1,6 +1,6 @@
-import './ItemListContainer.scss'
+import './WelcomeBanner.scss'
 
-export const ItemListContainer = ({title, subtitle, introduction}) => {
+export const WelcomeBanner = ({title, subtitle, introduction}) => {
     return (
         <div className="list__container">
             <h1 className='page-title'>{title}</h1>
