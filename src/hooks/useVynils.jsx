@@ -4,7 +4,7 @@ import { getVynils } from "../helpers/vynilHelper"
 
 export const useVynils = () => {
 
-    const [vynils, setVynils] = useState() 
+    const [vynils, setVynils] = useState([]) 
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {

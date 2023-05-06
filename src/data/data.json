@@ -48,5 +48,36 @@
         "state": ["New", "Sealed"],
         "discs": 1,
         "picture": "../../src/assets/images/vynils/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Redeemer Of Souls",
+        "price": 3500,
+        "artist": "Judas Priest",
+        "description": "Redeemer of Souls is the 17th studio album of the heavy metal bristish band, published in 2014",
+        "state": ["New"],
+        "discs": 1,
+        "picture": "../../src/assets/images/vynils/6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Kind Of Blue",
+        "price": 16900,
+        "artist": "Miles Davis",
+        "description": "Edited on August 1959. Recording took place on 30th Street Studio of Columbia Records in New York city in 10 hours along 2 days",
+        "state": ["New", "Sealed"],
+        "discs": 1,
+        "picture": "../../src/assets/images/vynils/7.jpg"
+    },
+
+    {
+        "id": 8,
+        "name": "Both Directions At Once",
+        "price": 8999,
+        "artist": "John Coltrane",
+        "description": "These discs appeared for first time on 2018. Recording was done in 1963 and got lost for decades.",
+        "state": ["New", "Imported"],
+        "discs": 2,
+        "picture": "../../src/assets/images/vynils/8.jpg"
     }
 ]
