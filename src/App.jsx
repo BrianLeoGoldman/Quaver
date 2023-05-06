@@ -1,5 +1,6 @@
 import './App.scss'
-import { WelcomeBanner } from './components/WelcomeBanner/WelcomeBanner'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { WelcomePage } from './components/WelcomePage/WelcomePage'
 import { Navbar } from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
@@ -7,12 +8,17 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 function App() {
   
   return (
-    <div className="App">
-      <Navbar/>
-      <WelcomeBanner title={"Welcome!"} subtitle={"Music, vynils & more!"} introduction={"Search from a wide selection of vynils of all music genres, styles and decades!"}/>
-      <ItemListContainer/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={ <WelcomePage /> }/>
+          <Route path='/catalog' element={ <ItemListContainer/> }/>
+          <Route path='*' element={ <Navigate to={'/'}/> }/>
+        </Routes>
+        <Footer/>
+      </div>    
+    </BrowserRouter>
   )
 }
 
