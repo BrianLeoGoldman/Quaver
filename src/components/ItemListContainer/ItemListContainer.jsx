@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { MOCK_DATA } from "../../data/MOCK_DATA"
 import { getVynils } from "../../helpers/vynilHelper"
-import { VynilCardList } from "../VynilCardList/VynilCardList"
+import { ItemList } from "../ItemList/ItemList"
 
-export const VynilCardContainer = () => {
+export const ItemListContainer = () => {
 
     const [vynils, setVynils] = useState([]) 
     const [loading, setLoading] = useState(true)
@@ -24,7 +24,7 @@ export const VynilCardContainer = () => {
 
     return(
         <div>
-            { loading ? <h2>Loading...</h2> : <VynilCardList items={vynils}/> }
+            { loading ? <h2>Loading...</h2> : <ItemList items={vynils}/> }
         </div>
     )
 

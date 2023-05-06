@@ -1,6 +1,6 @@
-import './VynilCard.scss'
+import './ItemCard.scss'
 
-export const VynilCard = ( {item} ) => {
+export const ItemCard = ( {item} ) => {
     let states = []
     item.state.forEach(element => {
         states.push(<p className="text box">{element}</p>)
