@@ -1,5 +1,6 @@
 import { ItemList } from "../ItemList/ItemList"
 import { useVynils } from "../../hooks/useVynils"
+import { Spinner } from "../Spinner/Spinner"
 
 export const ItemListContainer = () => {
 
@@ -7,7 +8,7 @@ export const ItemListContainer = () => {
     
     return(
         <div>
-            { loading ? <h2>Loading...</h2> : <ItemList items={vynils}/> }
+            { loading ? <Spinner/> : <ItemList items={vynils}/> }
         </div>
     )
 

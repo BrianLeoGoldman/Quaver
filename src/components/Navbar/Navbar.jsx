@@ -9,11 +9,11 @@ export const Navbar = () => {
             <span className="logo-name">QUAVER</span>
             <div className="header__container">
                 <nav className="navbar">
-                    <a href='#' className="navbar__link">HOME</a>
                     <a href='#' className="navbar__link">CATALOG</a>
-                    <a href='#' className="navbar__link">OFFERS</a>
-                    <a href='#' className="navbar__link">CART</a>
-                    <a href='#' className="navbar__link">USER</a>
+                    <a href='#' className="navbar__link">ROCK</a>
+                    <a href='#' className="navbar__link">JAZZ</a>
+                    <a href='#' className="navbar__link">POP</a>
+                    <a href='#' className="navbar__link">TECHNO</a>
                 </nav>
             </div>
             <CartWidget />
