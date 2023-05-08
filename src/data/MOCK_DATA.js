@@ -4,9 +4,10 @@ export const MOCK_DATA = [
         name: 'Band 1', 
         price: 3000, 
         artist: 'Artist A', 
+        genre: "Rock",
+        description: 'A description', 
         state: ["New"], 
         discs: 1, 
-        description: 'A description', 
         picture: '../../src/assets/images/vynils/A.jpg'
     },
     {
@@ -14,9 +15,10 @@ export const MOCK_DATA = [
         name: 'Band 2', 
         price: 4000, 
         artist: 'Artist B', 
+        genre: "Rock",
+        description: 'A description', 
         state: ["Used"], 
         discs: 2, 
-        description: 'A description', 
         picture: '../../src/assets/images/vynils/B.jpg'
     },
     {
@@ -24,9 +26,10 @@ export const MOCK_DATA = [
         name: 'Band 3', 
         price: 2500, 
         artist: 'Artist C', 
-        state: ["Sealed"], 
-        discs: 3, 
+        genre: "Rock",
         description: 'A description', 
+        state: ["Sealed"], 
+        discs: 3,
         picture: '../../src/assets/images/vynils/A.jpg'
     },
     {
@@ -34,9 +37,10 @@ export const MOCK_DATA = [
         name: 'Band 4', 
         price: 3600, 
         artist: 'Artist D', 
+        genre: "Rock",
+        description: 'A description', 
         state: ["New", "Sealed"], 
         discs: 4, 
-        description: 'A description', 
         picture: '../../src/assets/images/vynils/B.jpg'
     },
     {
@@ -44,9 +48,10 @@ export const MOCK_DATA = [
         name: 'Band 5', 
         price: 4100, 
         artist: 'Artist E', 
-        state: [], 
-        discs: 1, 
+        genre: "Rock",
         description: 'A description', 
+        state: [], 
+        discs: 1,
         picture: '../../src/assets/images/vynils/A.jpg'
     },
     {
@@ -54,9 +59,10 @@ export const MOCK_DATA = [
         name: 'Band 6', 
         price: 7090, 
         artist: 'Artist F', 
+        genre: "Rock",
+        description: 'A description', 
         state: [], 
         discs: 2, 
-        description: 'A description', 
         picture: '../../src/assets/images/vynils/B.jpg'
     }
 ]

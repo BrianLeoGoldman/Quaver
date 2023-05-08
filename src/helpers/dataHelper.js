@@ -1,4 +1,4 @@
-export const getVynils = async () => {
+export const getVynilsFromJSON = async () => {
     try {
         let vynils = []
         const importData = await fetch("../src/data/data.json");
@@ -8,7 +8,8 @@ export const getVynils = async () => {
                 {id: item.id,
                 name: item.name, 
                 price: item.price, 
-                artist: item.artist, 
+                artist: item.artist,
+                genre: item.genre, 
                 state: item.state, 
                 discs: item.discs, 
                 description: item.description, 

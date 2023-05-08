@@ -4,6 +4,7 @@ import { WelcomePage } from './components/WelcomePage/WelcomePage'
 import { Navbar } from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
   
@@ -12,8 +13,9 @@ function App() {
       <div className="App">
         <Navbar/>
         <Routes>
-          <Route path='/' element={ <WelcomePage /> }/>
-          <Route path='/catalog' element={ <ItemListContainer/> }/>
+          <Route path='/' element={ <ItemListContainer/> }/>
+          <Route path='/category/:id' element={ <ItemListContainer/> }/>
+          <Route path='/item/:id' element={ <ItemDetailContainer/> }/>
           <Route path='*' element={ <Navigate to={'/'}/> }/>
         </Routes>
         <Footer/>
