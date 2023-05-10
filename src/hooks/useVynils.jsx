@@ -11,7 +11,6 @@ export const useVynils = (id) => {
     useEffect(() => {
         setLoading(true)
         setTimeout(() => {
-            console.log("Hoaaaa")
             getVynilsFromJSON()
             .then((data) => {
                 !id ? setVynils(data) : setVynils(data.filter((elem) => elem.genre === id))
@@ -22,7 +21,7 @@ export const useVynils = (id) => {
             .finally(() => {
                 setLoading(false)
             })
-        }, 3000);
+        }, 2000);
         
     }, [id])
 

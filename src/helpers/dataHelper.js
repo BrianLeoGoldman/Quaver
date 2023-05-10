@@ -13,7 +13,8 @@ export const getVynilsFromJSON = async () => {
                 state: item.state, 
                 discs: item.discs, 
                 description: item.description, 
-                picture: item.picture}
+                picture: item.picture,
+                stock: item.stock}
             )
         })
         return vynils

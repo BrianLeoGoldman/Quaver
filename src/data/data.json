@@ -8,7 +8,8 @@
         "description": "Live presentation of the english band Queen at Rock in Rio on January 18 of 1985",
         "state": ["New"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/1.jpg"
+        "picture": "../../src/assets/images/vynils/1.jpg",
+        "stock": 7
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "description": "Limited edition with blue translucid color",
         "state": ["New", "Limited Edition", "Sealed"],
         "discs": 2,
-        "picture": "../../src/assets/images/vynils/2.jpg"
+        "picture": "../../src/assets/images/vynils/2.jpg",
+        "stock": 9
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "description": "Title says 40th Anniversary but actual edition is Double Picture Disc",
         "state": ["New", "Imported", "Sealed"],
         "discs": 2,
-        "picture": "../../src/assets/images/vynils/3.jpg"
+        "picture": "../../src/assets/images/vynils/3.jpg",
+        "stock": 12
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "description": "Live presentation with 14 songs",
         "state": ["Used"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/4.jpg"
+        "picture": "../../src/assets/images/vynils/4.jpg",
+        "stock": 6
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "description": "Live performance of AC/DC with Angus Young, Brian Johnson, Malcolm Young and Cliff Williams",
         "state": ["New", "Sealed"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/5.jpg"
+        "picture": "../../src/assets/images/vynils/5.jpg",
+        "stock": 16
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "description": "Redeemer of Souls is the 17th studio album of the heavy metal bristish band, published in 2014",
         "state": ["New"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/6.jpg"
+        "picture": "../../src/assets/images/vynils/6.jpg",
+        "stock": 11
     },
     {
         "id": 7,
@@ -74,18 +80,67 @@
         "description": "Edited on August 1959. Recording took place on 30th Street Studio of Columbia Records in New York city in 10 hours along 2 days",
         "state": ["New", "Sealed"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/7.jpg"
+        "picture": "../../src/assets/images/vynils/7.jpg",
+        "stock": 4
     },
-
     {
         "id": 8,
         "name": "Both Directions At Once",
         "price": 8999,
         "artist": "John Coltrane",
         "genre": "Jazz",
-        "description": "These discs appeared for first time on 2018. Recording was done in 1963 and got lost for decades.",
+        "description": "These discs appeared for first time on 2018. Recording was done in 1963 and got lost for decades",
         "state": ["New", "Imported"],
         "discs": 2,
-        "picture": "../../src/assets/images/vynils/8.jpg"
+        "picture": "../../src/assets/images/vynils/8.jpg",
+        "stock": 3
+    },
+    {
+        "id": 9,
+        "name": "Thriller",
+        "price": 17900,
+        "artist": "Michael Jackson",
+        "genre": "Pop",
+        "description": "Thriller is the sixth studio album by American singer Michael Jackson. It was released on November 30, 1982 by Epic Records",
+        "state": ["New", "Imported", "Sealed"],
+        "discs": 1,
+        "picture": "../../src/assets/images/vynils/9.jpg",
+        "stock": 16
+    },
+    {
+        "id": 10,
+        "name": "Transmission",
+        "price": 19990,
+        "artist": "Julian Jeweill",
+        "genre": "Techno",
+        "description": "Disc released on January 2019 by the french DJ",
+        "state": ["New", "Imported"],
+        "discs": 2,
+        "picture": "../../src/assets/images/vynils/10.jpg",
+        "stock": 19
+    },
+    {
+        "id": 11,
+        "name": "Portrait In Jazz",
+        "price": 14110,
+        "artist": "Bill Evans",
+        "genre": "Jazz",
+        "description": "Portrait in Jazz is an album by American jazz pianist Bill Evans, released in 1960",
+        "state": ["Used"],
+        "discs": 1,
+        "picture": "../../src/assets/images/vynils/11.jpg",
+        "stock": 2
+    },
+    {
+        "id": 12,
+        "name": "Diamonds",
+        "price": 25990,
+        "artist": "Elton John",
+        "genre": "Pop",
+        "description": "Diamonds is a compilation album by British musician and composer Elton John, released in November 2017. It contains the most important songs of his career and generally material from 1970 to 2016",
+        "state": ["New", "Imported"],
+        "discs": 2,
+        "picture": "../../src/assets/images/vynils/12.jpg",
+        "stock": 5
     }
 ]

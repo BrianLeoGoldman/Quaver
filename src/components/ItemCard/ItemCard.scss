@@ -36,10 +36,9 @@
         color: white;
     }
     .text-artist {
-        font-family: "Arvo";
+        font-family: "Cinzel";
         font-size: 1.3rem;
         @include box(rgba(67, 122, 216, 0.814), #0d6324, 2px, 5px);
-        cursor: pointer;
     }
     .text-price {
         font-family: "Oldenburg";
@@ -47,12 +46,6 @@
         font-weight: 700;
         @include box(rgba(216, 156, 67, 0.814), #63170d, 2px, 5px);
         color: white;
-    }
-    .details-button {
-        font-family: "Arvo";
-        font-weight: 700;
-        color: black;
-        background-color: rgba(184, 135, 11, 0.863);
     }
     .row-section {
         display: flex;
