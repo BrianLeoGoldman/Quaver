@@ -1,18 +1,26 @@
 import './App.scss'
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
-import { VynilCardList } from './components/VynilCardList/VynilCardList'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { WelcomePage } from './components/WelcomePage/WelcomePage'
 import { Navbar } from './components/Navbar/Navbar'
 import { Footer } from './components/Footer/Footer'
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
   
   return (
-    <div className="App">
-      <Navbar/>
-      <ItemListContainer title={"Welcome!"} subtitle={"Music, vynils & more!"} introduction={"Search from a wide selection of vynils of all music genres, styles and decades!"}/>
-      <VynilCardList/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={ <ItemListContainer/> }/>
+          <Route path='/category/:id' element={ <ItemListContainer/> }/>
+          <Route path='/item/:id' element={ <ItemDetailContainer/> }/>
+          <Route path='*' element={ <Navigate to={'/'}/> }/>
+        </Routes>
+        <Footer/>
+      </div>    
+    </BrowserRouter>
   )
 }
 

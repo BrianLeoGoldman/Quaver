@@ -1,0 +1,98 @@
+@mixin box ($background, $shadow, $padding, $margin) {
+    background-color: $background;
+    box-shadow: 0 0 5px $shadow;
+    border-radius: 10px;
+    padding-left: $padding;
+    padding-right: $padding;
+    margin: $margin;
+    width: fit-content;
+}
+
+.vynil-detail-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .vynil-details {
+        width: 1000px;
+        height: fit-content;
+        background-image: url("../../assets/images/background-1.jpg");
+        background-size: 100%;
+        box-shadow: 0 0 5px #1854af;
+        border: 25px;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 10px;
+        .vynil-picture {
+            height: 350px;
+            width: 350px;
+            padding: 20px;
+            border-radius: 25px;
+        }
+        .text {
+            font-family: "Cinzel";
+            color: black;
+            font-weight: 700;
+            margin: 10px;
+        }
+        .text-title {
+            @include box(rgba(216, 102, 67, 0.814), #63170d, 20px, 15px);
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        .text-artist {
+            @include box(rgba(67, 122, 216, 0.814), #0d6324, 20px, 15px);
+            font-size: 1.5rem;
+        }
+        .text-genre {
+            @include box(rgba(67, 122, 216, 0.814), #0d6324, 20px, 15px);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .text-state {
+            @include box(rgba(216, 156, 67, 0.814), #63170d, 20px, 15px);
+            color: white;
+            font-family: "Cinzel";
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .text-price {
+            @include box(rgba(216, 156, 67, 0.814), #63170d, 20px, 15px);
+            color: white;
+            font-family: "Oldenburg";
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .description-section {
+            @include box(rgba(216, 102, 67, 0.814), #63170d, 20px, 15px);
+        }
+        .text-description {
+            font-family: "Oldenburg";
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        .box {
+            background-color: rgba(216, 156, 67, 0.814);
+            box-shadow: 0 0 5px #63170d;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            color: white;
+        }
+        .row-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .column-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+    }
+}

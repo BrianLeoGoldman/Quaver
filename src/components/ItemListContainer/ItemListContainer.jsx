@@ -1,11 +1,17 @@
-import './ItemListContainer.scss'
+import { ItemList } from "../ItemList/ItemList"
+import { useVynils } from "../../hooks/useVynils"
+import { Spinner } from "../Spinner/Spinner"
+import { useParams } from "react-router-dom"
 
-export const ItemListContainer = ({title, subtitle, introduction}) => {
-    return (
-        <div className="list__container">
-            <h1 className='page-title'>{title}</h1>
-            <h2 className='page-subtitle'>{subtitle}</h2>
-            <p>{introduction}</p>
+export const ItemListContainer = () => {
+
+    const { id } = useParams()  // useParams() es un custom hook
+    const { loading, vynils } = useVynils(id)
+    
+    return(
+        <div>
+            { loading ? <Spinner/> : <ItemList items={vynils}/> }
         </div>
     )
+
 }

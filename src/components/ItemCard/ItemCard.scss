@@ -1,0 +1,64 @@
+@mixin box ($background, $shadow, $padding, $margin) {
+    background-color: $background;
+    box-shadow: 0 0 5px $shadow;
+    border-radius: 10px;
+    padding: $padding;
+    margin: $margin;
+    width: fit-content;
+}
+
+.vynil-card {
+    width: 400px;
+    height: 420px;
+    /* background-color: rgb(176, 84, 79); */
+    background-image: url("../../assets/images/background-2.jpg");
+    background-size: 180%;
+    box-shadow: 0 0 5px #1854af;
+    border: 25px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    .vynil-picture {
+        height: 180px;
+        width: 180px;
+        padding: 20px;
+        border-radius: 25px;
+    }
+    .text {
+        color: black;
+        font-weight: 700;
+    }
+    .text-title {
+        font-family: "Cinzel";
+        font-size: 1.8rem;
+        font-weight: 700;
+        @include box(rgba(216, 102, 67, 0.814), #63170d, 2px, 5px);
+        color: white;
+    }
+    .text-artist {
+        font-family: "Cinzel";
+        font-size: 1.3rem;
+        @include box(rgba(67, 122, 216, 0.814), #0d6324, 2px, 5px);
+    }
+    .text-price {
+        font-family: "Oldenburg";
+        font-size: 2rem;
+        font-weight: 700;
+        @include box(rgba(216, 156, 67, 0.814), #63170d, 2px, 5px);
+        color: white;
+    }
+    .row-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .column-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+

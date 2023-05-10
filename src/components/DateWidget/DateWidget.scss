@@ -1,0 +1,24 @@
+.date-widget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(171, 169, 43, 0.839);
+    width: fit-content;
+    padding: 5px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    .date-logo {
+        height:2.5em;
+        margin-right: 10px;
+    }
+    .date-data {
+        font-family: "Poppins";
+        font-weight: 800;
+        height: 1.5em;
+        font-size: larger;
+        font-weight: 700;
+        color: black;
+    }
+}

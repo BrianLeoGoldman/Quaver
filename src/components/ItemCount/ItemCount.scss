@@ -1,0 +1,33 @@
+.count-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .operation-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .count-button {
+            background-color: white;
+            color: black;
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 10px;
+            border-color: black;
+        }
+        .count-number {
+            font-family: "Cinzel";
+            height: 1.5em;
+            font-size: larger;
+            font-weight: 700;
+            margin: 10px;
+        }
+    }
+    .add-button {
+        font-family: "Cinzel";
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+        border-color: black;
+    }
+}
