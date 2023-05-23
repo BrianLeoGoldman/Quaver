@@ -1,19 +1,24 @@
 import {ItemCount} from "../ItemCount/ItemCount"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import "./ItemDetail.scss"
+import { CartContext } from "../../contexts/CartContext"
 
 export const ItemDetail = ({item}) => {
+
+    const { addToCartContext, isInCart } = useContext(CartContext)
 
     const [amount, setAmount] = useState(1)
     const [talle, setTalle] = useState(null)  // Cambiar esto!!!
 
-    const addToCart = () => { // Deberia llamarse handleAddCart
-        console.log({
+    const handleAddItem = () => { 
+        const newItem = {
             ...item,
             amount,
             talle
-        })
+        }
+        addToCartContext(newItem)
+        
     }
 
     const handleSelect = (e) => { //Delegar el select de mas abajo y esta funcion a un componente hijo
@@ -60,7 +65,13 @@ export const ItemDetail = ({item}) => {
                     <option value={"small"}>S</option>
                 </select>
 
-                <ItemCount amount={amount} setAmount={setAmount} stock={item.stock} addToCart={addToCart}/>
+                {
+                    isInCart(item.id) 
+                        ? <Link to={"/cart"}>Go to Cart</Link> 
+                        : <ItemCount amount={amount} setAmount={setAmount} stock={item.stock} addToCart={handleAddItem}/>
+                }
+
+                
             </div>
         </div>
     )

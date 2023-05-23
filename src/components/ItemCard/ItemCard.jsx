@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useContext } from "react"
 import './ItemCard.scss'
+import { CartContext } from "../../contexts/CartContext"
 
 export const ItemCard = ( {item} ) => {
+
     return (
     <div className="vynil-card">
         <div className="column-section">
