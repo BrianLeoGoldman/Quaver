@@ -6,13 +6,21 @@ import "./ItemDetail.scss"
 export const ItemDetail = ({item}) => {
 
     const [amount, setAmount] = useState(1)
+    const [talle, setTalle] = useState(null)  // Cambiar esto!!!
 
-    const addToCart = () => {
+    const addToCart = () => { // Deberia llamarse handleAddCart
         console.log({
             ...item,
-            amount
+            amount,
+            talle
         })
     }
+
+    const handleSelect = (e) => { //Delegar el select de mas abajo y esta funcion a un componente hijo
+        setTalle(e.target.value)
+    }
+    // Cada item en el JSON/API puede tener una lista de objetos con value y label, y esa lista
+    // se la paso al componente de talle y renderizo las options con un map por cada objeto
 
     let states = []
     item.state.forEach(element => {
@@ -45,6 +53,13 @@ export const ItemDetail = ({item}) => {
                     </div>
                     <img className="vynil-picture" src={item.picture} alt="Picture"/>
                 </div>
+
+                <select onChange={handleSelect}> 
+                    <option value={"large"}>L</option>
+                    <option value={"medium"}>M</option>
+                    <option value={"small"}>S</option>
+                </select>
+
                 <ItemCount amount={amount} setAmount={setAmount} stock={item.stock} addToCart={addToCart}/>
             </div>
         </div>
