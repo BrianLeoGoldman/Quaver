@@ -1,11 +1,13 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../../contexts/CartContext"
 import { AuthContext } from "../../contexts/AuthContext"
-import { Navigate } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
+import { collection, addDoc, doc, updateDoc } from "firebase/firestore"
+import { db } from "../../firebase/config"
 
 export const Checkout = () => {
 
-    const { cart, totalPrice } = useContext(CartContext)
+    const { cart, totalPrice, emptyCart } = useContext(CartContext)
     const { user } = useContext(AuthContext)
 
     const [values, setValues] = useState({
@@ -13,6 +15,8 @@ export const Checkout = () => {
         address: '',
         email: user.email
     })
+
+    const [ orderId, setOrderId ] = useState(null)
 
     const handleInput = (e) => {
         setValues({
@@ -44,7 +48,39 @@ export const Checkout = () => {
             total: totalPrice(),
             date: new Date()
         }
-        console.log(order)
+
+        order.items.forEach((item) => {
+            const itemRef = doc(db, "products", item.id)
+            getDoc(itemRef)
+                .then((doc) => {
+                    if(doc.data().stock > item.amount) {
+                        updateDoc(itemRef, { 
+                            stock: doc.data().stock - item.amount 
+                            // doc.data().stock es el stock del producto en la DB al momento de cerrar la compra
+                        })
+                    }
+                    else {
+                        alert("Not enough stock of this item")
+                    }
+                })
+        })
+        
+        const ordersRef = collection(db, "orders")
+        /* addDoc(ordersRef, order)
+            .then((doc) => 
+                setOrderId(doc.id),
+                emptyCart()
+            ) */
+    }
+
+    if(orderId) {
+        return( /* Create a new component! */
+            <div>
+                <h2>Your purchase was completed!</h2>
+                <h3>Your order id: {orderId}</h3>
+                <Link to={"/"}>Back to Catalog</Link>
+            </div>
+        )
     }
 
     if(cart.length == 0) {
