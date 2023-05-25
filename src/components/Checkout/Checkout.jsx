@@ -20,6 +20,21 @@ export const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        const { name, addresss, email } = values
+        if(name.length < 6) {
+            console.log("The name is short. It should have at least 6 characters")  // Poner un Sweet Alert
+            return
+        } 
+        if(addresss.length < 6) {
+            console.log("The addresss is short. It should have at least 6 characters")  // Poner un Sweet Alert
+            return
+        } 
+        if(email.length < 6) {
+            console.log("The email is short. It should have at least 6 characters")  // Poner un Sweet Alert
+            return
+        } 
+
         const order = {
             client: values,
             items: cart.map((item) => ({id: item.id, name: item.name, price: item.price, amount: item.amount})),
