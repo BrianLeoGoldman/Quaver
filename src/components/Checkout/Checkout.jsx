@@ -1,14 +1,17 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../../contexts/CartContext"
+import { AuthContext } from "../../contexts/AuthContext"
+import { Navigate } from "react-router-dom"
 
 export const Checkout = () => {
 
     const { cart, totalPrice } = useContext(CartContext)
+    const { user } = useContext(AuthContext)
 
     const [values, setValues] = useState({
         name: '',
         address: '',
-        email: ''
+        email: user.email
     })
 
     const handleInput = (e) => {
@@ -21,13 +24,13 @@ export const Checkout = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        const { name, addresss, email } = values
+        const { name, address, email } = values
         if(name.length < 6) {
             console.log("The name is short. It should have at least 6 characters")  // Poner un Sweet Alert
             return
         } 
-        if(addresss.length < 6) {
-            console.log("The addresss is short. It should have at least 6 characters")  // Poner un Sweet Alert
+        if(address.length < 6) {
+            console.log("The address is short. It should have at least 6 characters")  // Poner un Sweet Alert
             return
         } 
         if(email.length < 6) {
@@ -35,13 +38,17 @@ export const Checkout = () => {
             return
         } 
 
-        const order = {
+        const order = {  // Los datos del cliente deberian llenarse con los datos de sesion
             client: values,
             items: cart.map((item) => ({id: item.id, name: item.name, price: item.price, amount: item.amount})),
             total: totalPrice(),
             date: new Date()
         }
         console.log(order)
+    }
+
+    if(cart.length == 0) {
+        return <Navigate to={"/"}/>
     }
 
     return(
