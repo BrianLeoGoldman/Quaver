@@ -1,7 +1,10 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
+import { AuthContext } from "../../contexts/AuthContext"
 
 export const RegisterScreen = () => {
+
+    const { register } = useContext(AuthContext) 
 
     const [values, setValues] = useState({email: '', password: ''})
 
@@ -14,7 +17,7 @@ export const RegisterScreen = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(values)
+        register(values)
     }
 
     return(

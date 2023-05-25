@@ -1,7 +1,10 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
+import { AuthContext } from "../../contexts/AuthContext"
 
 export const LoginScreen = () => {
+
+    const { login, loginWithGoogle } = useContext(AuthContext)
 
     const [values, setValues] = useState({email: '', password: ''})
 
@@ -14,7 +17,7 @@ export const LoginScreen = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(values)
+        login(values)
     }
 
     return(
@@ -40,6 +43,7 @@ export const LoginScreen = () => {
                     <button type="submit">Login</button>
                     <Link to="/register">Register</Link>
                 </form>
+                <button onClick={loginWithGoogle}>Login with Google</button>
             </div>
         </div>
     )
