@@ -39,7 +39,7 @@ export const AuthProvider = ({children}) => {
                     logged: true
                 })
             }) */
-            .catch(e => console.log(e))
+            .catch(e => console.log(e))  // Capturar el error y crear error propio (e.message)
     }
 
     const logout = () => {
