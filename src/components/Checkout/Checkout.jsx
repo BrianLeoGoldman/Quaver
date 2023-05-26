@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { CartContext } from "../../contexts/CartContext"
 import { AuthContext } from "../../contexts/AuthContext"
 import { Link, Navigate } from "react-router-dom"
-import { collection, addDoc, doc, updateDoc } from "firebase/firestore"
+import { collection, addDoc, writeBatch, doc, updateDoc, query, where, documentId, getDocs } from "firebase/firestore"
 import { db } from "../../firebase/config"
 
 export const Checkout = () => {
@@ -25,10 +25,11 @@ export const Checkout = () => {
         })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
         const { name, address, email } = values
+
         if(name.length < 6) {
             console.log("The name is short. It should have at least 6 characters")  // Poner un Sweet Alert
             return
@@ -49,28 +50,52 @@ export const Checkout = () => {
             date: new Date()
         }
 
-        order.items.forEach((item) => {
-            const itemRef = doc(db, "products", item.id)
-            getDoc(itemRef)
-                .then((doc) => {
-                    if(doc.data().stock > item.amount) {
-                        updateDoc(itemRef, { 
-                            stock: doc.data().stock - item.amount 
-                            // doc.data().stock es el stock del producto en la DB al momento de cerrar la compra
-                        })
-                    }
-                    else {
-                        alert("Not enough stock of this item")
-                    }
-                })
-        })
-        
+        const batch = writeBatch(db)
+        const productsRef = collection(db, "products")
         const ordersRef = collection(db, "orders")
-        /* addDoc(ordersRef, order)
-            .then((doc) => 
-                setOrderId(doc.id),
-                emptyCart()
-            ) */
+        const outOfStock = []
+
+        // RESOLUCION 1
+        const q = query(productsRef, where( documentId(), "in", cart.map(item => item.id)))
+        // The query returns the products of the items in the cart as a collection
+        const products = await getDocs(q)
+        // La sentencia await se usa solo dentro de funciones asincronicas (async)
+        // El await hace que la sentencia sea bloqueante (el codigo no sigue ejecutando hasta que no se resuleva la Promise)
+        // Es una forma alternativa al .then().catch() para trabajar con asincronia
+
+        // RESOLUCION 2
+        /*
+        const promises = cart.map((item) => {
+            const ref = doc(productsRef, item.id)
+            return getDoc(ref)
+        })
+        const products = await Promise.all(promises)
+        // If we use this reolution, we call products.forEach and not products.doc.forEach
+        */
+
+        products.docs.forEach((doc) => {
+            const item = cart.find((i) => i.id === doc.id) // Busco el item del carrito con la misma id que el producto de la DB
+            const stock = doc.data().stock // Stock del item en la DB
+            if(stock >= item.amount) {
+                // doc.ref == doc(db, "products", doc.id)
+                batch.update(doc.ref, {stock: stock - item.amount})
+            }
+            else {
+                outOfStock.push(item)
+            }
+        })
+
+        if(outOfStock.length === 0) {
+            addDoc(ordersRef, order)
+                .then((doc) => {
+                    batch.commit()
+                    setOrderId(doc.id),
+                    emptyCart()
+                })
+        }
+        else {
+            console.log("Some items are out of stock! Sorry!")
+        }
     }
 
     if(orderId) {
