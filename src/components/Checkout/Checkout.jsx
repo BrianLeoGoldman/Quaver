@@ -16,6 +16,8 @@ export const Checkout = () => {
         email: user.email
     })
 
+    const [loading, setLoading ] = useState(false) 
+
     const [ orderId, setOrderId ] = useState(null)
 
     const handleInput = (e) => {
@@ -27,6 +29,7 @@ export const Checkout = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        setLoading(true)
 
         const { name, address, email } = values
 
@@ -91,10 +94,12 @@ export const Checkout = () => {
                     batch.commit()
                     setOrderId(doc.id),
                     emptyCart()
+                    setLoading(false)
                 })
         }
         else {
             console.log("Some items are out of stock! Sorry!")
+            setLoading(false)
         }
     }
 
@@ -136,7 +141,7 @@ export const Checkout = () => {
                     name="email"
                     onChange={handleInput}
                 />
-                <button type="submit">Send</button>
+                <button disabled={loading} type="submit">Send</button>
             </form>
         </div>
     )

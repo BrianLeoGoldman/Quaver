@@ -10,6 +10,7 @@ import { RegisterScreen } from '../components/RegisterScreen/RegisterScreen'
 import { useContext } from "react"
 import { AuthContext } from "../contexts/AuthContext"
 import { Checkout } from "../components/Checkout/Checkout"
+import { CheckoutFormik } from "../components/Checkout/CheckoutFormik"
 
 export const Router = () => {
 
@@ -27,7 +28,7 @@ export const Router = () => {
                             <Route path='/category/:categoryId' element={ <ItemListContainer/> }/>
                             <Route path='/item/:id' element={ <ItemDetailContainer/> }/>
                             <Route path='/cart' element={ <CartDetail/> }/>
-                            <Route path="/checkout" element={<Checkout/>}/>
+                            <Route path="/checkout" element={<CheckoutFormik/>}/>
                             <Route path='*' element={ <Navigate to={'/'}/> }/>
                         </Routes>
                         <Footer/>
