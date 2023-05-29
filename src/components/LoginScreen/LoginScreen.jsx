@@ -1,3 +1,4 @@
+import './LoginScreen.scss'
 import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../../contexts/AuthContext"
@@ -21,13 +22,14 @@ export const LoginScreen = () => {
     }
 
     return(
-        <div>
-            <div>
-                <h2>Login</h2>
+        <div className='login-container'>
+            <div className='login-subcontainer'>
+                <h2 className='title'>Login</h2>
                 <hr />
-                <form onSubmit={handleSubmit}>
+                <form className='login-form' onSubmit={handleSubmit}>
                     <input 
                         value={values.email} 
+                        className='input'
                         name="email" 
                         type="email" 
                         placeholder="Email"
@@ -35,15 +37,19 @@ export const LoginScreen = () => {
                     />
                     <input 
                         value={values.password} 
+                        className='input'
                         name="password" 
                         type="password" 
                         placeholder="Password"
                         onChange={handleInput}
                     />
-                    <button type="submit">Login</button>
-                    <Link to="/register">Register</Link>
+                    <div className='button-panel'>
+                        <button className='button' type="submit">Login</button>
+                        <button className='button'onClick={loginWithGoogle}>Login with Google</button>
+                    </div>
+                    <button className='button'><Link to="/register">Register</Link></button>
                 </form>
-                <button onClick={loginWithGoogle}>Login with Google</button>
+                
             </div>
         </div>
     )

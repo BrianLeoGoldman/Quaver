@@ -1,3 +1,4 @@
+import './RegisterScreen.scss'
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../../contexts/AuthContext"
@@ -21,13 +22,14 @@ export const RegisterScreen = () => {
     }
 
     return(
-        <div>
-            <div>
-                <h2>Register</h2>
+        <div className='register-container'>
+            <div className='register-subcontainer'>
+                <h2 className='title'>Register</h2>
                 <hr />
-                <form onSubmit={handleSubmit}>
+                <form className='register-form' onSubmit={handleSubmit}>
                     <input 
                         value={values.email} 
+                        className='input'
                         name="email" 
                         type="email" 
                         placeholder="Email"
@@ -35,13 +37,14 @@ export const RegisterScreen = () => {
                     />
                     <input 
                         value={values.password} 
+                        className='input'
                         name="password" 
                         type="password" 
                         placeholder="Password"
                         onChange={handleInput}
                     />
-                    <button type="submit">Register</button>
-                    <Link to="/login">Login</Link>
+                    <button className='button' type="submit">Register</button>
+                    <button className='button'><Link to="/login">Login</Link></button>
                 </form>
             </div>
         </div>
