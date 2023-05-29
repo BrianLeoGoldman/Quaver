@@ -23,10 +23,12 @@ export const Navbar = () => {
                     <Link to='/category/Techno' className="navbar__link">TECHNO</Link>
                 </nav>
             </div>
-            <CartWidget />
-            <div>
-                <p>Welcome {user.email}</p>
-                <button onClick={logout}>Logout</button>
+            <div className='user-info'>
+                <div className='user-buttons'>
+                    <CartWidget />
+                    <button onClick={logout}>Logout</button>
+                </div>
+                <p className='user-email'>{user.email}</p>
             </div>
         </header>
     )

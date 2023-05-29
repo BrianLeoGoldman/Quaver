@@ -73,7 +73,7 @@ export const Checkout = () => {
             return getDoc(ref)
         })
         const products = await Promise.all(promises)
-        // If we use this reolution, we call products.forEach and not products.doc.forEach
+        // If we use this resolution, we call products.forEach and not products.doc.forEach
         */
 
         products.docs.forEach((doc) => {
