@@ -26,7 +26,7 @@ export const Navbar = () => {
             <div className='user-info'>
                 <div className='user-buttons'>
                     <CartWidget />
-                    <button onClick={logout}>Logout</button>
+                    <button className='button' onClick={logout}>Logout</button>
                 </div>
                 <p className='user-email'>{user.email}</p>
             </div>

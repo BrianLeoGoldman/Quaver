@@ -1,3 +1,4 @@
+import './Checkout.scss'
 import { useContext, useState } from "react"
 import { CartContext } from "../../contexts/CartContext"
 import { AuthContext } from "../../contexts/AuthContext"
@@ -79,10 +80,10 @@ export const CheckoutFormik = () => {
 
     if(orderId) {
         return( /* Create a new component! */
-            <div>
-                <h2>Your purchase was completed!</h2>
-                <h3>Your order id: {orderId}</h3>
-                <Link to={"/"}>Back to Catalog</Link>
+            <div className='success-container'>
+                <h2 className='title'>Your purchase was completed!</h2>
+                <h3 className='order'>Your order id: <span className='order-number'>{orderId}</span></h3>
+                <button className='button'><Link to={"/"}>Back to Catalog</Link></button>
             </div>
         )
     }
@@ -103,14 +104,14 @@ export const CheckoutFormik = () => {
                 onSubmit={createOrder}
             >
                 {({errors}) => (
-                    <Form>
-                        <Field name="name" type="text"/>
-                        <ErrorMessage name="name" component={"p"}/>
-                        <Field name="address" type="text"/>
-                        <ErrorMessage name="address" component={"p"}/>
-                        <Field name="email" type="email"/>
-                        <ErrorMessage name="email" component={"p"}/>
-                        <button disabled={loading} type="submit">Send</button>
+                    <Form className='checkout-form'>
+                        <Field className='input' name="name" type="text" placeholder='Name'/>
+                        <ErrorMessage className='error' name="name" component={"p"}/>
+                        <Field className='input' name="address" type="text" placeholder='Address'/>
+                        <ErrorMessage className='error' name="address" component={"p"}/>
+                        <Field className='input' name="email" type="email" placeholder='Email'/>
+                        <ErrorMessage className='error' name="email" component={"p"}/>
+                        <button className='button' disabled={loading} type="submit">Send</button>
                     </Form>
                 )}
             </Formik>
