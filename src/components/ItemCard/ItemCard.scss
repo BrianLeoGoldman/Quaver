@@ -7,6 +7,12 @@
     width: fit-content;
 }
 
+.pictureSize {
+    height: 160px;
+    width: 160px;
+    border-radius: 25px;
+}
+
 .vynil-card {
     width: 400px;
     height: 420px;
@@ -18,12 +24,6 @@
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
-    .vynil-picture {
-        height: 180px;
-        width: 180px;
-        padding: 20px;
-        border-radius: 25px;
-    }
     .text {
         color: black;
         font-weight: 700;
@@ -59,6 +59,52 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
+    }
+    .smooth-image-wrapper {
+        @extend .pictureSize;
+        position: relative;
+        .smooth-image {
+            transition: opacity 1s;
+            @extend .pictureSize;
+        }
+        .smooth-no-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @extend .pictureSize;
+            background-color: #fcfcfc;
+            text-transform: capitalize;
+        }
+        .img-visible {
+            opacity: 1;
+        }
+        .img-hidden {
+            opacity: 0;
+        }
+        @keyframes preloader-block {
+            from {
+                background-position: 0%, 0;
+            }
+            to {
+                background-position: 170%, 0;
+            }
+        }
+        .smooth-preloader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @extend .pictureSize;
+            background: rgba(245, 245, 245, 0.34);
+            .loader {
+                background-image: url("../../assets/images/background-0.jpg");
+                /* linear-gradient(to right, #e6e6e6, #ffffff, #e6e6e6); */
+                background-size: 700%;
+                @extend .pictureSize;
+                display: inline-block;
+                background-size: 200%;
+                animation: preloader-block 2s linear 0s infinite reverse forwards;
+            }
+        }
     }
 }
 
