@@ -1,0 +1,27 @@
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 1.7em;
+    will-change: filter;
+    transition: filter 300ms;
+    border-radius: 10px;
+    margin-left: 20px;
+    &:hover {
+        animation-duration: 1.5s;
+        animation-name: logo-spin;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: linear;
+        filter: drop-shadow(0 0 0.5em #03e9f4);
+    }
+}

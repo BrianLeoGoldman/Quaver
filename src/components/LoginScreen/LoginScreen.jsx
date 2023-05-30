@@ -25,7 +25,6 @@ export const LoginScreen = () => {
         <div className='login-container'>
             <div className='login-subcontainer'>
                 <h2 className='title'>Login</h2>
-                <hr />
                 <form className='login-form' onSubmit={handleSubmit}>
                     <input 
                         value={values.email} 

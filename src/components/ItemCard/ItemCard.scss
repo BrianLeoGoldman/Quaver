@@ -17,7 +17,7 @@
     width: 400px;
     height: 420px;
     /* background-color: rgb(176, 84, 79); */
-    background-image: url("../../assets/images/background-2.jpg");
+    background-image: url("../../assets/images/backgrounds/background-2.jpg");
     background-size: 180%;
     box-shadow: 0 0 5px #1854af;
     border: 25px;
@@ -96,7 +96,7 @@
             @extend .pictureSize;
             background: rgba(245, 245, 245, 0.34);
             .loader {
-                background-image: url("../../assets/images/background-0.jpg");
+                background-image: url("../../assets/images/backgrounds/background-0.jpg");
                 /* linear-gradient(to right, #e6e6e6, #ffffff, #e6e6e6); */
                 background-size: 700%;
                 @extend .pictureSize;

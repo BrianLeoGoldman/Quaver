@@ -25,7 +25,6 @@ export const RegisterScreen = () => {
         <div className='register-container'>
             <div className='register-subcontainer'>
                 <h2 className='title'>Register</h2>
-                <hr />
                 <form className='register-form' onSubmit={handleSubmit}>
                     <input 
                         value={values.email} 
