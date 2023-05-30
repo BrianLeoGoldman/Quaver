@@ -84,4 +84,24 @@
             }
         }
     }
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        .user-buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .button {
+                font-family: "Cinzel";
+            }
+        }
+        .user-email {
+            font-family: "Oldenburg";
+            font-size: 1rem;
+            margin: 3px;
+            color: #fff;
+        }
+    }
 }

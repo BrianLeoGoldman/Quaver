@@ -8,8 +8,8 @@
         "description": "Live presentation of the english band Queen at Rock in Rio on January 18 of 1985",
         "state": ["New"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/1.jpg",
-        "stock": 7
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Rock%20You%20From%20Rio%20-%20Live%201985.jpg?alt=media&token=dc6128c1-b73e-424d-8d99-a071551ed2bf",
+        "stock": 20
     },
     {
         "id": 2,
@@ -20,8 +20,8 @@
         "description": "Limited edition with blue translucid color",
         "state": ["New", "Limited Edition", "Sealed"],
         "discs": 2,
-        "picture": "../../src/assets/images/vynils/2.jpg",
-        "stock": 9
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Best%20Of%20Electronic.jpg?alt=media&token=9dca6239-b5b0-45be-a37a-7c282e49abdf",
+        "stock": 15
     },
     {
         "id": 3,
@@ -32,7 +32,7 @@
         "description": "Title says 40th Anniversary but actual edition is Double Picture Disc",
         "state": ["New", "Imported", "Sealed"],
         "discs": 2,
-        "picture": "../../src/assets/images/vynils/3.jpg",
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Abba%20Gold.jpg?alt=media&token=7e4c8239-0625-4c53-902b-910bc2b06af2",
         "stock": 12
     },
     {
@@ -42,9 +42,9 @@
         "artist": "Nirvana",
         "genre": "Rock",
         "description": "Live presentation with 14 songs",
-        "state": ["Used"],
+        "state": ["New"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/4.jpg",
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Teatro%20Castelo%20Roma%201991.jpg?alt=media&token=32689940-4a83-4cb9-9894-70faee396831",
         "stock": 6
     },
     {
@@ -56,7 +56,7 @@
         "description": "Live performance of AC/DC with Angus Young, Brian Johnson, Malcolm Young and Cliff Williams",
         "state": ["New", "Sealed"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/5.jpg",
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Live%20At%20Circus%20Krone%202003.jpg?alt=media&token=a736870a-c290-4f3a-9e40-8ce7b8f28650",
         "stock": 16
     },
     {
@@ -68,7 +68,7 @@
         "description": "Redeemer of Souls is the 17th studio album of the heavy metal bristish band, published in 2014",
         "state": ["New"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/6.jpg",
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Redeemer%20Of%20Souls.jpg?alt=media&token=bf4b901d-0d25-4a2c-bd00-55b790947bae",
         "stock": 11
     },
     {
@@ -80,8 +80,8 @@
         "description": "Edited on August 1959. Recording took place on 30th Street Studio of Columbia Records in New York city in 10 hours along 2 days",
         "state": ["New", "Sealed"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/7.jpg",
-        "stock": 4
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Kind%20Of%20Blue.jpg?alt=media&token=b83f7a83-6348-40c2-8613-feed58b08b75",
+        "stock": 5
     },
     {
         "id": 8,
@@ -92,8 +92,8 @@
         "description": "These discs appeared for first time on 2018. Recording was done in 1963 and got lost for decades",
         "state": ["New", "Imported"],
         "discs": 2,
-        "picture": "../../src/assets/images/vynils/8.jpg",
-        "stock": 3
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Both%20Directions%20At%20Once.jpg?alt=media&token=b169ef32-6ea6-4fde-a9fc-33ac82b1c133",
+        "stock": 5
     },
     {
         "id": 9,
@@ -104,7 +104,7 @@
         "description": "Thriller is the sixth studio album by American singer Michael Jackson. It was released on November 30, 1982 by Epic Records",
         "state": ["New", "Imported", "Sealed"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/9.jpg",
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Thriller.jpg?alt=media&token=226e54a0-6f8c-4de9-b71a-c9fb9627b244",
         "stock": 16
     },
     {
@@ -116,7 +116,7 @@
         "description": "Disc released on January 2019 by the french DJ",
         "state": ["New", "Imported"],
         "discs": 2,
-        "picture": "../../src/assets/images/vynils/10.jpg",
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Transmission.jpg?alt=media&token=1297dd36-5a72-420f-9034-a9b77936081f",
         "stock": 19
     },
     {
@@ -126,10 +126,10 @@
         "artist": "Bill Evans",
         "genre": "Jazz",
         "description": "Portrait in Jazz is an album by American jazz pianist Bill Evans, released in 1960",
-        "state": ["Used"],
+        "state": ["New"],
         "discs": 1,
-        "picture": "../../src/assets/images/vynils/11.jpg",
-        "stock": 2
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Portrait%20In%20Jazz.jpg?alt=media&token=be9eef91-987a-4e9d-9eee-a717b1a4a22d",
+        "stock": 4
     },
     {
         "id": 12,
@@ -140,7 +140,7 @@
         "description": "Diamonds is a compilation album by British musician and composer Elton John, released in November 2017. It contains the most important songs of his career and generally material from 1970 to 2016",
         "state": ["New", "Imported"],
         "discs": 2,
-        "picture": "../../src/assets/images/vynils/12.jpg",
+        "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Diamonds.jpg?alt=media&token=4124943f-1c02-40d0-a237-e018b54a1777",
         "stock": 5
     }
 ]

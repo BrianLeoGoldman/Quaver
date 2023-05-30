@@ -1,18 +1,31 @@
 import {ItemCount} from "../ItemCount/ItemCount"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import "./ItemDetail.scss"
+import { CartContext } from "../../contexts/CartContext"
 
 export const ItemDetail = ({item}) => {
 
-    const [amount, setAmount] = useState(1)
+    const { addToCartContext, isInCart } = useContext(CartContext)
 
-    const addToCart = () => {
-        console.log({
+    const [amount, setAmount] = useState(1)
+    const [talle, setTalle] = useState(null)  // Cambiar esto!!!
+
+    const handleAddItem = () => { 
+        const newItem = {
             ...item,
-            amount
-        })
+            amount,
+            talle
+        }
+        addToCartContext(newItem)
+        
     }
+
+    const handleSelect = (e) => { //Delegar el select de mas abajo y esta funcion a un componente hijo
+        setTalle(e.target.value)
+    }
+    // Cada item en el JSON/API puede tener una lista de objetos con value y label, y esa lista
+    // se la paso al componente de talle y renderizo las options con un map por cada objeto
 
     let states = []
     item.state.forEach(element => {
@@ -45,7 +58,20 @@ export const ItemDetail = ({item}) => {
                     </div>
                     <img className="vynil-picture" src={item.picture} alt="Picture"/>
                 </div>
-                <ItemCount amount={amount} setAmount={setAmount} stock={item.stock} addToCart={addToCart}/>
+
+                <select onChange={handleSelect}> 
+                    <option value={"large"}>L</option>
+                    <option value={"medium"}>M</option>
+                    <option value={"small"}>S</option>
+                </select>
+
+                {
+                    isInCart(item.id) 
+                        ? <Link to={"/cart"}>Go to Cart</Link> 
+                        : <ItemCount amount={amount} setAmount={setAmount} stock={item.stock} addToCart={handleAddItem}/>
+                }
+
+                
             </div>
         </div>
     )

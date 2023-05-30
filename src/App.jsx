@@ -1,26 +1,18 @@
 import './App.scss'
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import { WelcomePage } from './components/WelcomePage/WelcomePage'
-import { Navbar } from './components/Navbar/Navbar'
-import { Footer } from './components/Footer/Footer'
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
-import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
+import { CartProvider } from './contexts/CartContext'
+import { AuthProvider } from './contexts/AuthContext'
+import { Router } from './router/Router'
 
 function App() {
-  
+
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar/>
-        <Routes>
-          <Route path='/' element={ <ItemListContainer/> }/>
-          <Route path='/category/:id' element={ <ItemListContainer/> }/>
-          <Route path='/item/:id' element={ <ItemDetailContainer/> }/>
-          <Route path='*' element={ <Navigate to={'/'}/> }/>
-        </Routes>
-        <Footer/>
-      </div>    
-    </BrowserRouter>
+    <AuthProvider> {/* OPCIONAL: Sincronizar sesion con estado del carrito, con una coleccion */}
+      <CartProvider>
+          <div className="App">
+            <Router/>
+          </div>    
+      </CartProvider>
+    </AuthProvider>
   )
 }
 

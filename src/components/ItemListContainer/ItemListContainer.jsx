@@ -5,8 +5,8 @@ import { useParams } from "react-router-dom"
 
 export const ItemListContainer = () => {
 
-    const { id } = useParams()  // useParams() es un custom hook
-    const { loading, vynils } = useVynils(id)
+    const { categoryId } = useParams()  // useParams() es un custom hook
+    const { loading, vynils } = useVynils(categoryId)
     
     return(
         <div>
