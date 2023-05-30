@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import { WelcomePage } from '../components/WelcomePage/WelcomePage'
 import { Navbar } from '../components/Navbar/Navbar'
 import { Footer } from '../components/Footer/Footer'
 import { ItemListContainer } from '../components/ItemListContainer/ItemListContainer'
@@ -23,7 +22,7 @@ export const Router = () => {
                     ? <>
                         <Navbar/>
                         <Routes>
-                            {/* Rutas privadas */}
+                            {/* Private routes */}
                             <Route path='/' element={ <ItemListContainer/> }/>
                             <Route path='/category/:categoryId' element={ <ItemListContainer/> }/>
                             <Route path='/item/:id' element={ <ItemDetailContainer/> }/>
@@ -33,13 +32,15 @@ export const Router = () => {
                         </Routes>
                         <Footer/>
                     </>
-                    :
+                    : <>
                         <Routes>
-                            {/* Rutas publicas */}
+                            {/* Public routes */}
                             <Route path='/login' element={<LoginScreen/>}/>
                             <Route path='/register' element={<RegisterScreen/>}/>
                             <Route path='*' element={<Navigate to="/login"/>}/>
                         </Routes>
+                        <Footer/>
+                    </>
             }
         </BrowserRouter>
     )

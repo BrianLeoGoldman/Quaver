@@ -6,7 +6,7 @@ import { Router } from './router/Router'
 function App() {
 
   return (
-    <AuthProvider> {/* OPCIONAL: Sincronizar sesion con estado del carrito, con una coleccion */}
+    <AuthProvider> 
       <CartProvider>
           <div className="App">
             <Router/>

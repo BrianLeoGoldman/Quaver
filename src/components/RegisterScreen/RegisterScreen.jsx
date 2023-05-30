@@ -2,6 +2,7 @@ import './RegisterScreen.scss'
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../../contexts/AuthContext"
+import { WelcomeBanner } from "../WelcomeBanner/WelcomeBanner"
 
 export const RegisterScreen = () => {
 
@@ -24,6 +25,7 @@ export const RegisterScreen = () => {
     return(
         <div className='register-container'>
             <div className='register-subcontainer'>
+                <WelcomeBanner title={"QUAVER"} subtitle={"Music, vynils & more!"} introduction={""}/>
                 <h2 className='title'>Register</h2>
                 <form className='register-form' onSubmit={handleSubmit}>
                     <input 
