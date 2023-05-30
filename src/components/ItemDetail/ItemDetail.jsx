@@ -1,29 +1,22 @@
 import {ItemCount} from "../ItemCount/ItemCount"
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import "./ItemDetail.scss"
 import { CartContext } from "../../contexts/CartContext"
 import { ItemScore } from "../ItemScore/ItemScore"
 
 export const ItemDetail = ({item}) => {
-
-    const { addToCartContext, isInCart } = useContext(CartContext)
-
+    
+    const { addToCart, isInCart } = useContext(CartContext)
     const [amount, setAmount] = useState(1)
 
     const handleAddItem = () => { 
         const newItem = {
             ...item,
             amount,
-            talle
         }
-        addToCartContext(newItem)
+        addToCart(newItem)
     }
-
-    let states = []
-    item.state.forEach(element => {
-        states.push(<p className="text text-state">{element}</p>)
-    })
 
     return (
         <div className="vynil-detail-container">
@@ -35,7 +28,9 @@ export const ItemDetail = ({item}) => {
                         <Link to={`/category/${item.genre}`} className="text text-genre">{item.genre}</Link>
                     </div>
                     <div className="row-section">
-                        {states}
+                        {item.state.map((elem) => {
+                            return <p key={elem} className="text text-state">{elem}</p>
+                        })}
                     </div>
                     <p className="text text-price">${item.price}</p>
                 </div>
@@ -51,16 +46,14 @@ export const ItemDetail = ({item}) => {
                     </div>
                     <img className="vynil-picture" src={item.picture} alt="Picture"/>
                 </div>
-
-                <ItemScore/>
-
-                {
-                    isInCart(item.id) 
-                        ? <Link to={"/cart"}>Go to Cart</Link> 
-                        : <ItemCount amount={amount} setAmount={setAmount} stock={item.stock} addToCart={handleAddItem}/>
-                }
-
-                
+                <div className="row-section">
+                    <ItemScore/>
+                    {
+                        isInCart(item.id) 
+                            ? <button className="button"><Link to={"/cart"}>Go to Cart</Link></button>
+                            : <ItemCount amount={amount} setAmount={setAmount} stock={item.stock} addToCart={handleAddItem}/>
+                    }
+                </div>
             </div>
         </div>
     )

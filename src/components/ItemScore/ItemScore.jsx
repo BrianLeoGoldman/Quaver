@@ -1,5 +1,6 @@
 import './ItemScore.scss'
 import { useContext, useState } from "react"
+import swal from 'sweetalert';
 
 export const ItemScore = () => {
 
@@ -12,6 +13,7 @@ export const ItemScore = () => {
     ]
 
     const [score, setScore] = useState(1)
+    const [voted, setVoted] = useState(false)
 
     const handleSelect = (e) => {
         setScore(e.target.value)
@@ -19,17 +21,23 @@ export const ItemScore = () => {
 
     const handleVote = () => {
         console.log(score)
+        setVoted(true)
+        swal({
+            title: "Thanks for your vote",
+            text: `You give a vote of ${score} vynils`,
+            button: "OK!"
+        })
     }
     
 
     return(
         <div className='score-container'>
-            <select className='score' onChange={handleSelect}> 
+            <select disabled={voted} className='score' onChange={handleSelect}> 
                 {votes.map((item) => {
-                    return <option className='item' value={item.vote}>{item.img}</option>
+                    return <option key={item.vote} className='item' value={item.vote}>{item.img}</option>
                 })}
             </select>
-            <button onClick={handleVote}>Vote</button>
+            <button disabled={voted} className='button' onClick={handleVote}>Vote</button>
         </div>
     )
 }
