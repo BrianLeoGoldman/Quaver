@@ -3,13 +3,13 @@ import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import "./ItemDetail.scss"
 import { CartContext } from "../../contexts/CartContext"
+import { ItemScore } from "../ItemScore/ItemScore"
 
 export const ItemDetail = ({item}) => {
 
     const { addToCartContext, isInCart } = useContext(CartContext)
 
     const [amount, setAmount] = useState(1)
-    const [talle, setTalle] = useState(null)  // Cambiar esto!!!
 
     const handleAddItem = () => { 
         const newItem = {
@@ -18,14 +18,7 @@ export const ItemDetail = ({item}) => {
             talle
         }
         addToCartContext(newItem)
-        
     }
-
-    const handleSelect = (e) => { //Delegar el select de mas abajo y esta funcion a un componente hijo
-        setTalle(e.target.value)
-    }
-    // Cada item en el JSON/API puede tener una lista de objetos con value y label, y esa lista
-    // se la paso al componente de talle y renderizo las options con un map por cada objeto
 
     let states = []
     item.state.forEach(element => {
@@ -59,11 +52,7 @@ export const ItemDetail = ({item}) => {
                     <img className="vynil-picture" src={item.picture} alt="Picture"/>
                 </div>
 
-                <select onChange={handleSelect}> 
-                    <option value={"large"}>L</option>
-                    <option value={"medium"}>M</option>
-                    <option value={"small"}>S</option>
-                </select>
+                <ItemScore/>
 
                 {
                     isInCart(item.id) 

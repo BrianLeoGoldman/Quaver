@@ -1,0 +1,13 @@
+.score-container {
+    .score {
+        border-radius: 12px;
+        background-color: darksalmon;
+        width: 120px;
+        height: 30px;
+        align-content: center;
+        .item {
+            border-radius: 12px;
+            background-color: darksalmon;
+        }
+    }
+}
