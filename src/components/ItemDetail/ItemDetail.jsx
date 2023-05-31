@@ -47,7 +47,7 @@ export const ItemDetail = ({item}) => {
                     <img className="vynil-picture" src={item.picture} alt="Picture"/>
                 </div>
                 <div className="row-section">
-                    <ItemScore/>
+                    {/* <ItemScore/> */}
                     {
                         isInCart(item.id) 
                             ? <button className="button"><Link to={"/cart"}>Go to Cart</Link></button>
