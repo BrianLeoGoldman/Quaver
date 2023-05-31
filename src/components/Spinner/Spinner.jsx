@@ -1,5 +1,5 @@
 import './Spinner.scss'
-import vynil from '../../assets/images/icons/spinner.png'
+import vynil from '../../assets/images/spinner.gif'
 import arm from '../../assets/images/icons/arm.png'
 
 export const Spinner = () => {

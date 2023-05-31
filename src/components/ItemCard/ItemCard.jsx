@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
-import { useContext } from "react"
+import { useState } from "react"
 import './ItemCard.scss'
-import { CartContext } from "../../contexts/CartContext"
 
 export const ItemCard = ( {item} ) => {
+
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const [isValidSrc, setIsValidSrc] = useState(!!item.picture);
 
     return (
     <div className="vynil-card">
@@ -13,7 +15,24 @@ export const ItemCard = ( {item} ) => {
         </div>
         <div className="column-section">
             <p className="text text-price">${item.price}</p>
-            <img className="vynil-picture" src={item.picture} alt="Picture" />
+            <div className="smooth-image-wrapper">
+                {isValidSrc ? (
+                    <img
+                        className={`smooth-image img-${imageLoaded ? "visible" : "hidden"}`}
+                        src={item.picture}
+                        alt={item.name}
+                        onLoad={() => setImageLoaded(true)}
+                        onError={() => setIsValidSrc(false)}
+                    />
+                ) : (
+                    <div className="smooth-no-image">{item.name}</div>
+                )}
+                {isValidSrc && !imageLoaded && (
+                    <div className="smooth-preloader">
+                        <span className="loader" />
+                    </div>
+                )}
+            </div>
         </div>
     </div>
     )

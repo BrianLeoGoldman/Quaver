@@ -1,0 +1,30 @@
+.list__container {
+    background-size: 100%;
+    font-family: "Cinzel";
+    color: black;
+    padding-top: 50px;
+    .page-title {
+        color: black;
+        font-family: 'Cinzel';
+        font-size: 4rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-shadow: 6px 6px 8px white;
+    }
+    .page-subtitle {
+        color: black;
+        font-family: 'Cinzel';
+        font-size: 3rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-shadow: 6px 6px 8px white;
+    }
+    .introduction {
+        color: black;
+        font-family: 'Cinzel';
+        font-size: 2rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-shadow: 6px 6px 8px white;
+    }
+}

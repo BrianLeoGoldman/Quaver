@@ -10,7 +10,7 @@ export const CartDetail = () => {
 
     return(
         <div className='cart-container'>
-            <h2 className='title'>Your Purchase</h2>
+            <h2 className='title'>Your Cart</h2>
             <hr />
             <div className='product-list'>
                 {

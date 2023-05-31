@@ -17,7 +17,7 @@
     .vynil-details {
         width: 1000px;
         height: fit-content;
-        background-image: url("../../assets/images/background-1.jpg");
+        background-image: url("../../assets/images/backgrounds/background-1.jpg");
         background-size: 100%;
         box-shadow: 0 0 5px #1854af;
         border: 25px;
@@ -93,6 +93,10 @@
             align-items: center;
             justify-content: center;
             padding: 10px;
+        }
+        .button {
+            font-family: "Cinzel";
+            margin: 7px;
         }
     }
 }

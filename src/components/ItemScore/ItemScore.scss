@@ -1,0 +1,61 @@
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    .score {
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+        width: 120px;
+        height: 30px;
+        align-content: center;
+        .item {
+            border-radius: 12px;
+            background-color: white;
+        }
+    }
+    .button {
+        font-family: "Cinzel";
+        margin: 7px;
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
+}
+
+.swal-modal {
+    background-color: rgba(63,255,106,0.69);
+    border: 3px solid white;
+}
+
+.swal-title {
+    font-family: "Cinzel";
+    margin: 0px;
+    font-size: 2rem;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin-bottom: 28px;
+}
+
+.swal-text {
+    font-family: "Cinzel";
+    font-size: 1.5rem;
+    background-color: #FEFAE3;
+    padding: 17px;
+    border: 1px solid #F0E1A1;
+    display: block;
+    margin: 20px;
+    text-align: center;
+    color: #61534e;
+}
+
+.swal-button {
+    font-family: "Cinzel";
+    padding: 7px 19px;
+    border-radius: 12px;
+    background-color: #4962B3;
+    font-size: 1.5rem;
+    border: 1px solid #3e549a;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
