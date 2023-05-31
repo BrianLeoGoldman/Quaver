@@ -20,7 +20,6 @@ export const ItemScore = () => {
     }
 
     const handleVote = () => {
-        console.log(score)
         setVoted(true)
         swal({
             title: "Thanks for your vote",

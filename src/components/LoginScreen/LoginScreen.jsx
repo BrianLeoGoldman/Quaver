@@ -2,7 +2,7 @@ import './LoginScreen.scss'
 import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import { AuthContext } from "../../contexts/AuthContext"
-import { WelcomeBanner } from "../WelcomeBanner/WelcomeBanner"
+import { TextBanner } from "../TextBanner/TextBanner"
 
 export const LoginScreen = () => {
 
@@ -25,7 +25,7 @@ export const LoginScreen = () => {
     return(
         <div className='login-container'>
             <div className='login-subcontainer'>
-                <WelcomeBanner title={"QUAVER"} subtitle={"Music, vynils & more!"} introduction={""}/>
+                <TextBanner title={"QUAVER"} subtitle={"Music, vynils & more!"} introduction={""}/>
                 <h2 className='title'>Login</h2>
                 <form className='login-form' onSubmit={handleSubmit}>
                     <input 

@@ -1,4 +1,4 @@
-export const getVynilsFromJSON = async () => {
+export const getDataFromJSON = async () => {
     try {
         let vynils = []
         const importData = await fetch("../src/data/data.json");
