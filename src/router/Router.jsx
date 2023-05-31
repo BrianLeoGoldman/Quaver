@@ -10,6 +10,7 @@ import { useContext } from "react"
 import { AuthContext } from "../contexts/AuthContext"
 import { Checkout } from "../components/Checkout/Checkout"
 import { CheckoutFormik } from "../components/Checkout/CheckoutFormik"
+import { Profile } from "../components/Profile/Profile"
 
 export const Router = () => {
 
@@ -28,6 +29,7 @@ export const Router = () => {
                             <Route path='/item/:id' element={ <ItemDetailContainer/> }/>
                             <Route path='/cart' element={ <CartDetail/> }/>
                             <Route path="/checkout" element={<CheckoutFormik/>}/>
+                            <Route path="/profile" element={<Profile/>}/>
                             <Route path='*' element={ <Navigate to={'/'}/> }/>
                         </Routes>
                         <Footer/>
