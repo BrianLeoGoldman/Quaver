@@ -8,14 +8,14 @@
 }
 
 .pictureSize {
-    height: 160px;
-    width: 160px;
+    height: 180px;
+    width: 180px;
     border-radius: 25px;
 }
 
 .vynil-card {
-    width: 400px;
-    height: 420px;
+    width: 420px;
+    height: 440px;
     /* background-color: rgb(176, 84, 79); */
     background-image: url("../../assets/images/backgrounds/background-2.jpg");
     background-size: 180%;
@@ -30,7 +30,7 @@
     }
     .text-title {
         font-family: "Cinzel";
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 700;
         @include box(rgba(216, 102, 67, 0.814), #63170d, 2px, 5px);
         color: white;
@@ -39,6 +39,7 @@
         font-family: "Cinzel";
         font-size: 1.3rem;
         @include box(rgba(67, 122, 216, 0.814), #0d6324, 2px, 5px);
+        margin-top: 15px;
     }
     .text-price {
         font-family: "Oldenburg";
@@ -46,6 +47,7 @@
         font-weight: 700;
         @include box(rgba(216, 156, 67, 0.814), #63170d, 2px, 5px);
         color: white;
+        margin-top: 15px;
     }
     .row-section {
         display: flex;

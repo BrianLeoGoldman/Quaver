@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Rock You From Rio - Live 1985",
+        "name": "Rock You From Rio",
         "price": 7190,
         "artist": "Queen",
         "genre": "Rock",
@@ -37,11 +37,11 @@
     },
     {
         "id": 4,
-        "name": "Teatro Castelo Roma 1991",
+        "name": "Teatro Castelo Roma",
         "price": 5490,
         "artist": "Nirvana",
         "genre": "Rock",
-        "description": "Live presentation with 14 songs",
+        "description": "Live presentation from 1991 with 14 songs",
         "state": ["New"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Teatro%20Castelo%20Roma%201991.jpg?alt=media&token=32689940-4a83-4cb9-9894-70faee396831",
@@ -49,11 +49,11 @@
     },
     {
         "id": 5,
-        "name": "Live At Circus Krone 2003",
+        "name": "Live At Circus Krone",
         "price": 5790,
         "artist": "AC/DC",
         "genre": "Rock",
-        "description": "Live performance of AC/DC with Angus Young, Brian Johnson, Malcolm Young and Cliff Williams",
+        "description": "Live performance from 2003 of AC/DC with Angus Young, Brian Johnson, Malcolm Young and Cliff Williams",
         "state": ["New", "Sealed"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Live%20At%20Circus%20Krone%202003.jpg?alt=media&token=a736870a-c290-4f3a-9e40-8ce7b8f28650",
@@ -105,7 +105,7 @@
         "state": ["New", "Imported", "Sealed"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Thriller.jpg?alt=media&token=226e54a0-6f8c-4de9-b71a-c9fb9627b244",
-        "stock": 16
+        "stock": 20
     },
     {
         "id": 10,
