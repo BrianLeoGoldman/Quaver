@@ -12,6 +12,7 @@ export const ItemCount = ({amount, setAmount, stock, addToCart}) => {
 
     return (
         <div className='count-container'>
+            <button disabled className='stock-text'>STOCK: {stock}</button>
             {
                 stock > 0
                     ? 

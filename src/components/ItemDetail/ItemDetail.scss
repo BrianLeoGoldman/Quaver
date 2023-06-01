@@ -1,11 +1,10 @@
-@mixin box ($background, $shadow, $padding, $margin) {
+@mixin box ($background, $shadow, $border-radius, $padding, $margin) {
     background-color: $background;
     box-shadow: 0 0 5px $shadow;
-    border-radius: 10px;
+    border-radius: $border-radius;
     padding-left: $padding;
     padding-right: $padding;
     margin: $margin;
-    width: fit-content;
 }
 
 .vynil-detail-container{
@@ -15,7 +14,7 @@
     align-items: center;
     justify-content: center;
     .vynil-details {
-        width: 1000px;
+        width: 1300px;
         height: fit-content;
         background-image: url("../../assets/images/backgrounds/background-1.jpg");
         background-size: 100%;
@@ -25,47 +24,59 @@
         margin: 20px;
         padding: 10px;
         .vynil-picture {
-            height: 350px;
-            width: 350px;
+            height: 400px;
+            width: 400px;
             padding: 20px;
             border-radius: 60px;
         }
         .text {
             font-family: "Cinzel";
             color: black;
+            font-size: 2rem;
             font-weight: 700;
             margin: 10px;
         }
         .text-title {
-            @include box(rgba(216, 102, 67, 0.814), #63170d, 20px, 15px);
+            @include box(rgba(216, 102, 67, 0.814), #63170d, 10px, 20px, 15px);
             font-size: 1.8rem;
             font-weight: 700;
         }
         .text-artist {
-            @include box(rgba(67, 122, 216, 0.814), #0d6324, 20px, 15px);
+            @include box(rgba(67, 122, 216, 0.814), #0d6324, 10px, 20px, 15px);
             font-size: 1.5rem;
         }
         .text-genre {
-            @include box(rgba(67, 122, 216, 0.814), #0d6324, 20px, 15px);
+            @include box(rgba(67, 122, 216, 0.814), #0d6324, 10px, 20px, 15px);
             font-size: 1.5rem;
             cursor: pointer;
         }
         .text-state {
-            @include box(rgba(216, 156, 67, 0.814), #63170d, 20px, 15px);
+            @include box(rgba(216, 156, 67, 0.814), #63170d, 10px, 20px, 15px);
             color: white;
             font-family: "Cinzel";
             font-size: 1.5rem;
             font-weight: 500;
         }
         .text-price {
-            @include box(rgba(216, 156, 67, 0.814), #63170d, 20px, 15px);
+            @include box(rgba(216, 156, 67, 0.814), #63170d, 10px, 20px, 15px);
             color: white;
             font-family: "Oldenburg";
             font-size: 2rem;
             font-weight: 700;
         }
+        .songs-section {
+            height: 400px;
+            width: 400px;
+            border-radius: 60px;
+            @include box(rgba(216, 102, 67, 0.814), #63170d, 10px, 20px, 15px);
+            overflow-y: auto;
+        }
         .description-section {
-            @include box(rgba(216, 102, 67, 0.814), #63170d, 20px, 15px);
+            height: 400px;
+            width: 400px;
+            border-radius: 60px;
+            @include box(rgba(216, 102, 67, 0.814), #63170d, 10px, 20px, 15px);
+            overflow-y: auto;
         }
         .text-description {
             font-family: "Oldenburg";
