@@ -9,7 +9,24 @@
         "state": ["New"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Rock%20You%20From%20Rio%20-%20Live%201985.jpg?alt=media&token=dc6128c1-b73e-424d-8d99-a071551ed2bf",
-        "stock": 20
+        "stock": 20,
+        "songs": 
+        [
+            "Tie Your Mother Down", 
+            "Keep Yourself Alive", 
+            "Liar", 
+            "It's A Hard Life",
+            "Is This The World We Created?",
+            "Love Of My Life",
+            "Brighton Rock",
+            "Bohemian Rhapsody",
+            "Radio Ga Ga",
+            "I Want To Break Free",
+            "We Will Rock You",
+            "We Are The Champions",
+            "Seven Seas Of Rhye",
+            "God Save The Queen"
+        ]
     },
     {
         "id": 2,
@@ -21,7 +38,29 @@
         "state": ["New", "Limited Edition", "Sealed"],
         "discs": 2,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Best%20Of%20Electronic.jpg?alt=media&token=9dca6239-b5b0-45be-a37a-7c282e49abdf",
-        "stock": 15
+        "stock": 15,
+        "songs": 
+        [
+            "From Here To Eternity (Single Version)", 
+            "First Hand Experience In Second Hand Love", 
+            "Utopia - Me Giorgio", 
+            "From Here To Eternity (Reprise)",
+            "Baby Blue (Single Version)",
+            "I Wanna Funk With You Tonite (Single Version)",
+            "Chase (1985 Remix By Brian Reeves)",
+            "Let The Music Play (Single Version)",
+            "E=MC2",
+            "Too Hot To Handle",
+            "I Wanna Rock You",
+            "Too Hot To Touch",
+            "Solitary Man",
+            "Lady, Lady",
+            "Knights In White Satin (Single Version)",
+            "A Love Affair",
+            "American Dream (Single Version)",
+            "Shannon's Eyes (Single Version)",
+            "Love Now, Hurt Later"
+        ]
     },
     {
         "id": 3,
@@ -33,7 +72,29 @@
         "state": ["New", "Imported", "Sealed"],
         "discs": 2,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Abba%20Gold.jpg?alt=media&token=7e4c8239-0625-4c53-902b-910bc2b06af2",
-        "stock": 12
+        "stock": 12,
+        "songs":
+        [
+            "Dancing Queen",
+            "Knowing Me, Knowing You",
+            "Take a Chance on Me",
+            "Mamma Mia",
+            "Lay All Your Love on Me",
+            "Super Trouper",
+            "I Have a Dream",
+            "The Winner Takes It All",
+            "Money, Money, Money",
+            "S.O.S",
+            "Chiquitita",
+            "Fernando",
+            "Voulez-Vous",
+            "Gimme! Gimme! Gimme! (A Man After Midnight)",
+            "Does Your Mother Know",
+            "One of Us",
+            "The Name of the Game",
+            "Thank You for the Music",
+            "Waterloo"
+        ]
     },
     {
         "id": 4,
@@ -45,7 +106,24 @@
         "state": ["New"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Teatro%20Castelo%20Roma%201991.jpg?alt=media&token=32689940-4a83-4cb9-9894-70faee396831",
-        "stock": 6
+        "stock": 6,
+        "songs":
+        [
+            "School",
+            "Floyd The Barber",
+            "Smells Like Teen Spirit",
+            "About A Girl",
+            "Polly",
+            "Lithium",
+            "Sliver",
+            "Come As You Are",
+            "Breed",
+            "Been A Son",
+            "Negative Creep",
+            "On A Plain",
+            "Blew",
+            "Rape Me"
+        ]
     },
     {
         "id": 5,
@@ -57,7 +135,19 @@
         "state": ["New", "Sealed"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Live%20At%20Circus%20Krone%202003.jpg?alt=media&token=a736870a-c290-4f3a-9e40-8ce7b8f28650",
-        "stock": 16
+        "stock": 16,
+        "songs":
+        [
+            "Hell Ain't A Bad Place To Be",
+            "Back In Black",
+            "Rock 'N' Roll Damnation",
+            "What's Next To The Moon",
+            "The Jack",
+            "If You Want Blood (You've Got It)",
+            "T.N.T.",
+            "Highway To Hell",
+            "For Those About To Rock (We Salute You)"
+        ]
     },
     {
         "id": 6,
@@ -69,7 +159,23 @@
         "state": ["New"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Redeemer%20Of%20Souls.jpg?alt=media&token=bf4b901d-0d25-4a2c-bd00-55b790947bae",
-        "stock": 11
+        "stock": 11,
+        "songs":
+        [
+            "Dragonaught",
+            "Redeemer Of Souls",
+            "Halls Of Valhalla",
+            "Sword Of Damocles",
+            "March Of The Damned",
+            "Down In Flames",
+            "Hell And Back",
+            "Cold Blooded",
+            "Metalizer",
+            "Crossfire",
+            "Secrets Of The Dead",
+            "Battle Cry",
+            "Beginning Of The End"
+        ]
     },
     {
         "id": 7,
@@ -81,7 +187,15 @@
         "state": ["New", "Sealed"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Kind%20Of%20Blue.jpg?alt=media&token=b83f7a83-6348-40c2-8613-feed58b08b75",
-        "stock": 5
+        "stock": 5,
+        "songs":
+        [
+            "So What",
+            "Freddie Freeloader",
+            "Blue In Green",
+            "All Blues",
+            "Flamenco Sketches"
+        ]
     },
     {
         "id": 8,
@@ -93,7 +207,24 @@
         "state": ["New", "Imported"],
         "discs": 2,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Both%20Directions%20At%20Once.jpg?alt=media&token=b169ef32-6ea6-4fde-a9fc-33ac82b1c133",
-        "stock": 5
+        "stock": 5,
+        "songs":
+        [
+            "Untitled Original 11383 (Take 1)",
+            "Nature Boy",
+            "Untitled Original 11386 (Take 1)",
+            "Vilia (Take 3)",
+            "Impressions (Take 3)",
+            "Slow Blues",
+            "One Up, One Down (Take 1)",
+            "Vilia (Take 5)",
+            "Impressions (Take 1)",
+            "Impressions (Take 2)",
+            "Impressions (Take 4)",
+            "Untitled Original 11386 (Take 2)",
+            "Untitled Original 11386 (Take 5)",
+            "One Up, One Down (Take 6)"
+        ]
     },
     {
         "id": 9,
@@ -105,7 +236,19 @@
         "state": ["New", "Imported", "Sealed"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Thriller.jpg?alt=media&token=226e54a0-6f8c-4de9-b71a-c9fb9627b244",
-        "stock": 20
+        "stock": 20,
+        "songs":
+        [
+            "Wanna Be Startin' Somethin'",
+            "Baby Be Mine",
+            "The Girl Is Mine",
+            "Thriller",
+            "Beat It",
+            "Billie Jean",
+            "Human Nature",
+            "P.Y.T. (Pretty Young Thing)",
+            "The Lady In My Life"
+        ]
     },
     {
         "id": 10,
@@ -117,7 +260,21 @@
         "state": ["New", "Imported"],
         "discs": 2,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Transmission.jpg?alt=media&token=1297dd36-5a72-420f-9034-a9b77936081f",
-        "stock": 19
+        "stock": 19,
+        "songs":
+        [
+            "Intro",
+            "Transmission",
+            "Mars",
+            "Internal",
+            "Planet X",
+            "Futura",
+            "Hyoid",
+            "Turbulence",
+            "Dorsal",
+            "Astral",
+            "Final"
+        ]
     },
     {
         "id": 11,
@@ -129,7 +286,19 @@
         "state": ["New"],
         "discs": 1,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Portrait%20In%20Jazz.jpg?alt=media&token=be9eef91-987a-4e9d-9eee-a717b1a4a22d",
-        "stock": 4
+        "stock": 4,
+        "songs":
+        [
+            "Come Rain Or Come Shine",
+            "Autumn Leaves",
+            "Witchcraft",
+            "When I Fall In Love",
+            "Peri's Scope",
+            "What Is This Thing Called Love?",
+            "Spring Is Here",
+            "Someday My Prince Will Come",
+            "Blue In Green"
+        ]
     },
     {
         "id": 12,
@@ -141,6 +310,60 @@
         "state": ["New", "Imported"],
         "discs": 2,
         "picture": "https://firebasestorage.googleapis.com/v0/b/quaver-react.appspot.com/o/Diamonds.jpg?alt=media&token=4124943f-1c02-40d0-a237-e018b54a1777",
-        "stock": 5
+        "stock": 5,
+        "songs":
+        [
+            "Your Song",
+            "Tiny Dancer",
+            "Rocket Man (I Think It's Going To Be A Long, Long Time)",
+            "Honky Cat",
+            "Crocodile Rock",
+            "Daniel",
+            "Saturday Night's Alright (For Fighting)",
+            "Goodbye Yellow Brick Road",
+            "Candle In The Wind",
+            "Bennie And The Jets",
+            "The Bitch Is Back",
+            "Philadelphia Freedom",
+            "Island Girl",
+            "Someone Saved My Life Tonight",
+            "Don't Go Breaking My Heart",
+            "Sorry Seems To Be The Hardest Word",
+            "Little Jeannie",
+            "Song For Guy",
+            "Blue Eyes",
+            "I'm Still Standing",
+            "I Guess That's Why They Call It The Blues",
+            "Sad Songs (Say So Much)",
+            "Nikita",
+            "I Don't Wanna Go On With You Like That",
+            "Sacrifice",
+            "Don't Let The Sun Go Down On Me",
+            "Something About The Way You Look Tonight (Single Edit)",
+            "I Want Love",
+            "Can You Feel The Love Tonight",
+            "Are You Ready For Love?",
+            "Electricity",
+            "Home Again",
+            "Looking Up",
+            "Circle Of Life",
+            "Skyline Pigeon (Piano Version)",
+            "Lucy In The Sky With Diamonds",
+            "Pinball Wizard",
+            "Mama Can't Buy You Love",
+            "Part-Time Love",
+            "Victim Of Love",
+            "Empty Garden (Hey Hey Johnny)",
+            "Kiss The Bride",
+            "That's What Friends Are For",
+            "The One",
+            "True Love",
+            "Believe",
+            "Live Like Horses",
+            "Written In The Stars",
+            "This Train Don't Stop There Anymore",
+            "Good Morning To The Night",
+            "Step Into Christmas"
+        ]
     }
 ]
