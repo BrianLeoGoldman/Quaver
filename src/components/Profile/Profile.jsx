@@ -15,7 +15,7 @@ export const Profile = () => {
                 <h3 className="title">My Profile</h3>
                 <h3 className="text">{user.email}</h3>
             </div>
-            <OrderListContainer/>
+            <OrderListContainer email={user.email}/>
         </div>
     )
 }

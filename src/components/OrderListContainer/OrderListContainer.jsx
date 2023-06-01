@@ -1,26 +1,15 @@
 import { useOrders } from "../../hooks/useOrders"
+import { OrderList } from "../OrderList/OrderList"
 import { Spinner } from "../Spinner/Spinner"
 
-export const OrderListContainer = () => {
+export const OrderListContainer = ({ email }) => {
 
-    const { loading, orders } = useOrders("leonel89011@gmail.com")
+    const { loading, orders } = useOrders(email)
 
     return(
-        <div className="orders-info">
-                {
-                    loading 
-                        ? <Spinner/> 
-                        : orders.map((elem) => {
-                            return(
-                                <div className="order">
-                                    <h3>{elem.id}</h3>
-                                    <h4>{elem.client.name}</h4>
-                                    <h4>{elem.client.email}</h4>
-                                </div>
-                            )
-                        })
-                }
-            </div>
+        <div>
+            { loading ? <Spinner/> : <OrderList orders={orders}/> }
+        </div>
     )
 
 }

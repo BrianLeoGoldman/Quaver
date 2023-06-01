@@ -1,0 +1,17 @@
+.order {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    border-width: 8px;
+    border-style: double;
+    border-color: chocolate;
+    padding: 15px;
+    .id {
+        font-size: 1.5rem;
+        font-family: 'Oldenburg';
+    }
+    .data {
+        font-size: 1.3rem;
+        font-family: 'Oldenburg';
+    }
+}
