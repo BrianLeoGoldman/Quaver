@@ -8,42 +8,65 @@
         font-weight: 700;
         font-size: 40px;
         color: black;
+        margin-top: 30px;
     }
     .product-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        .product-card {
-            background-image: url("../../assets/images/backgrounds/background-3.jpg");
-            background-size: 150%;
-            border-radius: 20px;
+        margin-top: 30px;
+        .empty-cart {
             height: 350px;
-            width: 400px;
+            width: 500px;
+            margin: 20px;
+        }
+        .cart-framework {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 10px;
-            padding: 5px;
-            .product-info {
-                font-family: "Cinzel";
-                font-weight: 700;
-                font-size: 20px;
-                color: black;
+            justify-content: center;
+            .cart-content{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .product-card {
+                    background-image: url("../../assets/images/backgrounds/background-3.jpg");
+                    background-size: 150%;
+                    border-radius: 20px;
+                    height: 350px;
+                    width: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 10px;
+                    padding: 5px;
+                    .product-info {
+                        font-family: "Cinzel";
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: black;
+                    }
+                    .product-img {
+                        height: 200px;
+                        width: 200px;
+                        border-radius: 12px;
+                    }
+                }
+                
             }
-            .product-img {
-                height: 200px;
-                width: 200px;
-                border-radius: 12px;
+            .total-amount {
+                font-family: "Cinzel";
+                font-size: 2rem;
+                margin-top: 20px;
             }
         }
     }
     .button-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
         .button {
             font-family: "Cinzel";
             margin: 10px;

@@ -16,13 +16,15 @@
 .vynil-card {
     width: 420px;
     height: 440px;
-    /* background-color: rgb(176, 84, 79); */
     background-image: url("../../assets/images/backgrounds/background-2.jpg");
     background-size: 180%;
     box-shadow: 0 0 5px #1854af;
     border: 25px;
     border-radius: 10px;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
     padding: 10px;
     .text {
         color: black;

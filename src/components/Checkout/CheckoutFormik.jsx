@@ -81,8 +81,8 @@ export const CheckoutFormik = () => {
     if(orderId) {
         return( /* Create a new component! */
             <div className='success-container'>
-                <h2 className='title'>Your purchase was completed!</h2>
-                <h3 className='order'>Your order id: <span className='order-number'>{orderId}</span></h3>
+                <h2 className='success-title'>Your purchase was completed!</h2>
+                <h3 className='success-order'>Your order id: <span className='order-number'>{orderId}</span></h3>
                 <button className='button'><Link to={"/"}>Back to Catalog</Link></button>
             </div>
         )
@@ -94,6 +94,8 @@ export const CheckoutFormik = () => {
 
     return(
         <div>
+            <h2 className='form-title'>Fill the form to complete your order</h2>
+            <hr />
             <Formik 
                 initialValues={{
                     name: '',

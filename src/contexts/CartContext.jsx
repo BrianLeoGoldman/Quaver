@@ -19,6 +19,10 @@ export const CartProvider = ({children}) => {
         return cart.some((item) => item.id === id)
     }
 
+    const isEmpty = () => {
+        return !cart.length > 0
+    }
+
     const emptyCart = () => {
         setCart([])
     }
@@ -33,7 +37,7 @@ export const CartProvider = ({children}) => {
 
     return(
         <CartContext.Provider 
-            value={{cart, addToCart, removeItem, isInCart, emptyCart, totalAmount, totalPrice}}
+            value={{cart, addToCart, removeItem, isInCart, isEmpty, emptyCart, totalAmount, totalPrice}}
         >
             {children}
         </CartContext.Provider>
