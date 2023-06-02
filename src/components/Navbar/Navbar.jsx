@@ -27,7 +27,7 @@ export const Navbar = () => {
                     <CartWidget />
                     <button className='button' onClick={logout}>Logout</button>
                 </div>
-                <p className='user-email'>{user.email}</p>
+                <Link to='/profile' className="user-email">{user.email}</Link>
             </div>
         </header>
     )

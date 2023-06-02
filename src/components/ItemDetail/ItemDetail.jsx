@@ -37,17 +37,23 @@ export const ItemDetail = ({item}) => {
                 <div className="row-section">
                     <div className="description-section">
                         <div className="column-section">
+                            <p className="text">ABOUT</p>
                             <p className="text text-description">{item.description}</p>
                             <div className="row-section">
                                 <p className="text text-description">{item.discs} DISC/S</p>
-                                <p className="text text-description">STOCK: {item.stock}</p>
                             </div>
                         </div>
                     </div>
                     <img className="vynil-picture" src={item.picture} alt="Picture"/>
+                    <div className="songs-section">
+                        <p className="text">SONGS</p>
+                        {item.songs.map((elem) => {
+                            return <p key={elem} className="text text-state">{elem}</p>
+                        })}
+                    </div>
                 </div>
                 <div className="row-section">
-                    <ItemScore/>
+                    {/* <ItemScore/> */}
                     {
                         isInCart(item.id) 
                             ? <button className="button"><Link to={"/cart"}>Go to Cart</Link></button>

@@ -1,0 +1,93 @@
+@keyframes left-to-right {
+    0% {
+        transform: translate(0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+    33% {
+        transform: translate(300px, 0px) rotate(360deg);
+        animation-timing-function:ease-in-out;
+    }
+    66% {
+        transform: translate(0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+}
+
+@keyframes right-to-left {
+    0% {
+        transform: translate(0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+    33% {
+        transform: translate(-300px, 0px) rotate(-360deg);
+        animation-timing-function:ease-in-out;
+    }
+    66% {
+        transform: translate(0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+}
+
+
+.success-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .success-title {
+        font-family: "Cinzel";
+        font-weight: 700;
+        font-size: 40px;
+        color: black;
+        margin: 30px;
+        margin-top: 40px;
+    }
+    .success-order {
+        font-family: "Cinzel";
+        font-size: 1.7rem;
+        margin: 30px;
+        margin-bottom: 40px;
+        padding: 30px;
+        border-width: 8px;
+        border-style: double;
+        border-color: chocolate;
+        .order-number {
+            color: crimson;
+        }
+    }
+    .vynils-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .vynilA {
+            height: 200px;
+            width: 200px;
+            animation-name: right-to-left;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            margin: 5px;
+        }
+        .vynilPlayer {
+            height: 225px;
+            width: 225px;
+            margin: 5px;
+        }
+        .vynilB {
+            height: 200px;
+            width: 200px;
+            animation-name: left-to-right;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            margin: 5px;
+        }
+    }
+    .button-back-catalog {
+        font-family: "Cinzel";
+        margin: 40px;
+    }
+}

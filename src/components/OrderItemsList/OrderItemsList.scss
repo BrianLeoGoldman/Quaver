@@ -1,0 +1,41 @@
+.orders-items-list {
+    height: 200px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-width: 3px;
+    border-color: darkgoldenrod;
+    border-style: dashed;
+    overflow-y: auto;
+    margin-top: 10px;
+    .order-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        .text {
+            font-family: 'Oldenburg';
+        }
+    }
+}
+
+.orders-items-list::-webkit-scrollbar {
+    width: 20px;
+}
+    
+.orders-items-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+    
+.orders-items-list::-webkit-scrollbar-thumb {
+    background:chocolate; 
+    border-radius: 10px;
+}
+    
+.orders-items-list::-webkit-scrollbar-thumb:hover {
+    background:darkgoldenrod; 
+}

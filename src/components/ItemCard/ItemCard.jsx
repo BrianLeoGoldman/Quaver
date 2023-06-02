@@ -14,7 +14,7 @@ export const ItemCard = ( {item} ) => {
             <p className="text text-artist">{item.artist}</p>
         </div>
         <div className="column-section">
-            <p className="text text-price">${item.price}</p>
+            
             <div className="smooth-image-wrapper">
                 {isValidSrc ? (
                     <img
@@ -33,6 +33,7 @@ export const ItemCard = ( {item} ) => {
                     </div>
                 )}
             </div>
+            <p className="text text-price">${item.price}</p>
         </div>
     </div>
     )
