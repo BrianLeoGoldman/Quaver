@@ -4,5 +4,24 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .empty-orders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .empty-orders-img {
+            height: 350px;
+            width: 400px;
+            margin: 30px;
+        }
+        .empty-orders-title {
+            font-family: 'Cinzel';
+            font-size: 2rem;
+            color: gold;
+            text-shadow: 0 0 5px black;
+            margin: 40px;
+        }
+    }
 } 

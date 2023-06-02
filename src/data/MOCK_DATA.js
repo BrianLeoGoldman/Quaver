@@ -8,7 +8,7 @@ export const MOCK_DATA = [
         description: 'A description', 
         state: ["New"], 
         discs: 1, 
-        picture: '../../src/assets/images/A.jpg'
+        picture: '../../src/assets/images/A.png'
     },
     {
         id: 9998, 
@@ -19,7 +19,7 @@ export const MOCK_DATA = [
         description: 'A description', 
         state: ["Used"], 
         discs: 2, 
-        picture: '../../src/assets/images/B.jpg'
+        picture: '../../src/assets/images/B.png'
     },
     {
         id: 9997, 
@@ -30,7 +30,7 @@ export const MOCK_DATA = [
         description: 'A description', 
         state: ["Sealed"], 
         discs: 3,
-        picture: '../../src/assets/images/A.jpg'
+        picture: '../../src/assets/images/A.png'
     },
     {
         id: 9996, 
@@ -41,7 +41,7 @@ export const MOCK_DATA = [
         description: 'A description', 
         state: ["New", "Sealed"], 
         discs: 4, 
-        picture: '../../src/assets/images/B.jpg'
+        picture: '../../src/assets/images/B.png'
     },
     {
         id: 9995, 
@@ -52,7 +52,7 @@ export const MOCK_DATA = [
         description: 'A description', 
         state: [], 
         discs: 1,
-        picture: '../../src/assets/images/A.jpg'
+        picture: '../../src/assets/images/A.png'
     },
     {
         id: 9994, 
@@ -63,6 +63,6 @@ export const MOCK_DATA = [
         description: 'A description', 
         state: [], 
         discs: 2, 
-        picture: '../../src/assets/images/B.jpg'
+        picture: '../../src/assets/images/B.png'
     }
 ]

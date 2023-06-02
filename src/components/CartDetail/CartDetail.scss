@@ -13,9 +13,22 @@
     .product-list {
         margin-top: 30px;
         .empty-cart {
-            height: 350px;
-            width: 500px;
-            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .empty-cart-img {
+                height: 350px;
+                width: 550px;
+                margin: 20px;
+            }
+            .empty-cart-title {
+                font-family: 'Cinzel';
+                font-size: 2rem;
+                color: gold;
+                text-shadow: 0 0 5px black;
+                margin: 40px;
+            }
         }
         .cart-framework {
             display: flex;
