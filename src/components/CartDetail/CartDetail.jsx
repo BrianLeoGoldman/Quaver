@@ -17,7 +17,8 @@ export const CartDetail = () => {
                     isEmpty()
                         ? 
                         <div className='empty-cart'>
-                            <img className="empty-cart-img" src="../../src/assets/images/empty-cart.png" alt="Empty Cart"/>
+                            <img className="empty-cart-img" src="../../../public/images/empty-cart.png" alt="Empty Cart"/>
+                            {/* <img className="empty-cart-img" src="../../src/assets/images/empty-cart.png" alt="Empty Cart"/> */}
                             <h3 className='empty-cart-title'>Your cart is empty</h3>
                         </div>
                         : 
