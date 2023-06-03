@@ -92,8 +92,7 @@ export const Checkout = () => {
         <div>
             <h2 className='form-title'>Fill the form to complete your order</h2>
             <hr />
-            <img className="send-form-img" src="../../../public/images/send-form.png" alt="Send Form"/>
-            {/* <img className="send-form-img" src="../../src/assets/images/send-form.png" alt="Send Form"/> */}
+            <img referrerPolicy="no-referrer" className="send-form-img" src="../../src/assets/images/send-form.png" alt="Send Form"/>
             <Formik 
                 initialValues={{
                     name: '',
